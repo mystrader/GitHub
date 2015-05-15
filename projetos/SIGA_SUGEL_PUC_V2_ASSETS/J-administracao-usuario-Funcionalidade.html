@@ -1,0 +1,694 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge; charset=UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="SIGA2">
+        <meta name="author" content="SEPLAG">
+
+        <title>SIGA2</title>
+        <link rel="shortcut icon" href="/static/images/favicon.png"/>
+
+        <!-- Bootstrap core CSS -->
+        <link rel="stylesheet" type="text/css" href="/static/css/bootstrap.css" />
+        <link rel="stylesheet" type="text/css" href="/static/css/sigaCustomBootstrap.css" />
+        <link rel="stylesheet" type="text/css" href="/static/css/dataTables.bootstrap.css" >
+
+         <!-- Custom styles for this template -->
+         <link rel="stylesheet" type="text/css" href="/static/css/siga.css" />
+         <link rel="stylesheet" type="text/css" href="/static/css/siga.M0.css" />
+         <link rel="stylesheet" type="text/css" href="/static/css/docs.css" />
+         <link rel="stylesheet" type="text/css" href="/static/css/tabdrop.css" />
+         <link rel="stylesheet" type="text/css" href="/static/css/datepicker.css">
+         <link rel="stylesheet" type="text/css" href="/static/css/themes/default/style.min.css" />
+
+         <style type="text/css">
+        	.dropdown-submenu{position:relative;}
+			.dropdown-submenu>.dropdown-menu{top:0;left:100%;margin-top:-6px;margin-left:-1px;-webkit-border-radius:0 6px 6px 6px;-moz-border-radius:0 6px 6px 6px;border-radius:0 6px 6px 6px;}
+			.dropdown-submenu>a:after{display:block;content:" ";float:right;width:0;height:0;border-color:transparent;border-style:solid;border-width:5px 0 5px 5px;border-left-color:#cccccc;margin-top:5px;margin-right:-10px;}
+			.dropdown-submenu:hover>a:after{border-left-color:#555;}
+			.dropdown-submenu.pull-left{float:none;}.dropdown-submenu.pull-left>.dropdown-menu{left:-100%;margin-left:10px;-webkit-border-radius:6px 0 6px 6px;-moz-border-radius:6px 0 6px 6px;border-radius:6px 0 6px 6px;}
+         </style>
+
+        <!-- Just for debugging purposes. Don't actually copy this line! -->
+        <!--[if lt IE 9]><script type="text/javascript" src="/SIGATESTES/static/js/ie8-responsive-file-warning.js"></script><![endif]-->
+
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+
+        <!--[if lt IE 9]>
+          <script src="/static/js/html5shiv.js"></script>
+          <script src="/static/js/respond.min.js"></script>
+        <![endif]-->
+
+        <!-- sj:head jqueryui="true" jquerytheme="flick" locale="pt-BR" / -->
+
+         <!-- =============================================
+		    Bootstrap core JavaScript
+		    ================================================== -->
+		    <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+		    <script type="text/javascript" src="/static/js/bootstrap.min.js"></script>
+         	<script type="text/javascript" src="/static/js/holder.js"></script>
+            <script type="text/javascript" src="/static/js/jquery.dataTables.min.js"></script>
+        	<script type="text/javascript" src="/static/js/dataTables.bootstrap.js"></script>
+
+        	 <!-- Scripts utilizados no sistema -->
+	        <script type="text/javascript" src="/static/js/siga.js"></script>
+	        <script type="text/javascript" src="/static/js/siga_m0.js"></script>
+            <script type="text/javascript" src="/static/js/bootstrap-datepicker.js"></script>
+
+            <script type="text/javascript" src="/static/js/jquery.mask.min.js"></script>
+	        <script type="text/javascript" src="/static/js/jstree.min.js"></script>
+
+			<script type="text/javascript" src="/static/js/jquery.validate.min.js"></script>
+			<script type="text/javascript" src="/static/js/jquery.bsAlerts.min.js"></script>
+			<script type="text/javascript" src="/static/js/messages_pt_BR.min.js"></script>
+
+
+
+
+            <script type="text/javascript">
+
+            (function($){
+				$(document).ready(function(){
+					$('ul.dropdown-menu [data-toggle=dropdown]').on('click', function(event) {
+						event.preventDefault();
+						event.stopPropagation();
+						$(this).parent().siblings().removeClass('open');
+						$(this).parent().toggleClass('open');
+					});
+				});
+			})(jQuery);
+
+
+            </script>
+
+
+
+
+
+
+    </head>
+
+
+    <!-- NAVBAR
+      ================================================== -->
+    <body>
+
+	<div class="navbar-wrapper">
+        <div class="logosiga"> <a href="#"><img class="siga" src="/static/images/logo2.png" alt="SIGA"></a></div>
+        <div><img class="gov" src="/static/images/govRio.jpg"></div>
+     	<div class="user-box">
+		<div class="user-box-inner">
+                    <div class="user-info">
+                    	Bem-Vindo, ADMINISTRADOR  (SUPORTE)
+			<ul class="unstyled">
+			    <li>
+				<a href="#"></a>
+			    </li>
+			</ul>
+                     </div>
+                  </div>
+              </div>
+
+            <div class="container">
+
+	        <!-- =============================================
+		NAVBAR
+		================================================== -->
+
+
+
+
+<div class="navbar navbar-inverse navbar-static-top" role="navigation">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+        </div>
+        <div class="navbar-collapse collapse" id="menu_id">
+            <ul class="nav navbar-nav">
+                <li class="active dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Registro de Preço<b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">PLS</a></li>
+                        <li class="divider"></li>
+                        <li><a href="#">Ata</a></li>
+                    </ul>
+                </li>
+
+                <li class="active dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Requisição<b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Carrinho</a></li>
+                        <li class="divider"></li>
+                        <li><a href="/SIGATESTES/administracao/ConsultarItemCatalogado/apresentaBuscar.action">Consulta de Itens</a></li>
+                        <li class="divider"></li>
+                        <li><a href="#">Requisitar</a></li>
+                    </ul>
+                </li>
+
+                <li class="active dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Processo<b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Definição</a></li>
+                        <li class="divider"></li>
+                        <li><a href="#">Planejamento</a></li>
+                        <li class="divider"></li>
+                        <li><a href="#">Pesquisa de Mercado</a></li>
+                        <li class="divider"></li>
+                        <li><a href="#">PED</a></li>
+                    </ul>
+                </li>
+
+                <li class="active dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Licitação<b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Pregão</a></li>
+                        <li class="divider"></li>
+                        <li><a href="#">Tradicionais</a></li>
+                        <li class="divider"></li>
+                        <li><a href="#">RDC</a></li>
+                    </ul>
+                </li>
+
+                <li class="active dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Contratação<b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Contratar</a></li>
+                        <li class="divider"></li>
+                        <li><a href="#">Gestão Contratual</a></li>
+                        <li class="divider"></li>
+                        <li><a href="#">Contratações Especiais</a></li>
+                    </ul>
+                </li>
+
+                <li class="active dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Recebimento<b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Consultar Prog. de Entrega</a></li>
+                        <li class="divider"></li>
+                        <li><a href="#">Receber</a></li>
+                        <li class="divider"></li>
+                        <li><a href="#">Aceitar</a></li>
+                        <li class="divider"></li>
+                        <li><a href="#">Consultar Avaliação</a></li>
+                        <li class="divider"></li>
+                        <li><a href="#">Entradas Diversas</a></li>
+                    </ul>
+                </li>
+
+                <li class="active dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Almoxarifado<b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        <li class="dropdown dropdown-submenu"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Operação</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">Armazenamento</a></li>
+                                <li class="divider"></li>
+                                <li><a href="#">Atendimento</a></li>
+                                <li class="divider"></li>
+                                <li><a href="#">Ressuprimento</a></li>
+                            </ul>
+                        </li>
+                    	<li class="divider"></li>
+                        <li class="dropdown dropdown-submenu"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Gestão</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">Disponibilidade</a></li>
+                                <li class="divider"></li>
+                                <li><a href="#">Inventário</a></li>
+                                <li class="divider"></li>
+                                <li><a href="#">Relatórios</a></li>
+                                <li class="divider"></li>
+                                <li><a href="#">Parametrizar Itens</a></li>
+                                <li class="divider"></li>
+                                <li><a href="#">Parametrizar Almoxarifado</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li class="active dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Gestão<b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">BI</a></li>
+                        <li class="divider"></li>
+                        <li><a href="#">Relatórios</a></li>
+                        <li class="divider"></li>
+                        <li><a href="/SIGATESTES/administracao/AnalisarConformidade/apresentaCriar.action">Analisar Conformidade</a></li>
+                        <li class="divider"></li>
+                        <li><a href="/SIGATESTES/administracao/PenalidadeFornecedor/apresentaBuscar.action">Manter Penalidades de Fornecedores</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="/SIGATESTES/administracao/Minuta/apresentaBuscarGestao.action">Minutas</a>
+                </li>
+                <li class="active dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Administração<b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    	<li class="dropdown dropdown-submenu"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Parâmetros</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">Sistema</a></li>
+                                <li class="divider"></li>
+                                <li><a href="#">Compras</a></li>
+                            </ul>
+                        </li>
+                        <li class="divider"></li>
+                    	<li class="dropdown dropdown-submenu"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Sistema</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="/SIGATESTES/administracao/Evento/apresentaBuscar.action">Visualizar Log de Eventos</a></li>
+                                <li class="divider"></li>
+                                <li><a href="/SIGATESTES/administracao/Historico/apresentaBuscar.action">Visualizar Histórico</a></li>
+                                <li class="divider"></li>
+
+	                                <li><a href="/SIGATESTES/administracao/Almoxarifado/apresentaBuscar.action">Manter Almoxarifado</a></li>
+	                                <li class="divider"></li>
+
+
+
+                                <li><a href="/SIGATESTES/administracao/PlanoConta/apresentaBuscar.action">Plano de Contas</a></li>
+                                <li class="divider"></li>
+                                <li><a href="/SIGATESTES/administracao/Localidades/apresentaBuscar.action">Manter Localidades</a></li>
+                                <li class="divider"></li>
+
+
+	                                <li class="disabled"><a href="#">Gerenciar Mensagens</a></li>
+
+
+                            </ul>
+                        </li>
+                        <li class="divider"></li>
+                    	<li class="dropdown dropdown-submenu"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Usuário</a>
+                            <ul class="dropdown-menu">
+
+	                                <li><a href="/SIGATESTES/administracao/Usuario/apresentaBuscar.action">Manter Usuário do Sistema</a></li>
+	                                <li class="divider"></li>
+
+
+
+                                <!-- /sec:hasRole-->
+
+	                                <li><a href="/SIGATESTES/administracao/Perfil/apresentaBuscar.action">Manter Perfis de Usuário</a></li>
+	                                <li class="divider"></li>
+
+
+
+
+                                	<li><a href="/SIGATESTES/administracao/Funcionalidade/apresentaPesquisar.action">Gerenciar Funcionalidades</a></li>
+                                        <li class="divider"></li>
+
+
+
+
+                                	<li><a href="/SIGATESTES/administracao/DesbloquearAcesso/apresentaBuscar.action">Desbloquear Acesso</a></li>
+
+
+
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+
+                <li class="active dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Cadastro<b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        <li class="dropdown dropdown-submenu"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Fornecedor</a>
+                            <ul class="dropdown-menu">
+                            <li><a href="/SIGATESTES/administracao/FornecedorSimplificado/apresentaBuscar.action">Registro Simplificado</a></li>
+                            <li class="divider"></li>
+                            <li><a href="/SIGATESTES/administracao/UsuarioFornecedor/apresentaSolicitarSenha.action">Usuario Fornecedor</a></li>
+                            <li class="divider"></li>
+                            <li><a href="/SIGATESTES/administracao/UsuarioFornecedor/apresentaLembrarSenha.action">Esquecimento de Senha Usuario Fornecedor</a></li>
+                            <li class="divider"></li>
+                            <li><a href="/SIGATESTES/administracao/Sancao/apresentaBuscar.action">Manter Sanção</a></li>
+                            </ul>
+                        </li>
+                        <li class="divider"></li>
+                    	<li class="dropdown dropdown-submenu"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Catalogação</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="/SIGATESTES/administracao/EstruturaCatalogo/apresentaBuscar.action">Manutenção de Estrutura do Catálogo</a></li>
+                                <li class="divider"></li>
+                                <li><a href="/SIGATESTES/administracao/PropriedadeItem/apresentaBuscar.action">Manter PDM</a></li>
+                                <li class="divider"></li>
+                                <li><a href="/SIGATESTES/administracao/FormaFornecimento/apresentaListar.action">Manter Forma de Fornecimento</a></li>
+                                <li class="divider"></li>
+                                <li><a href="#">Consultar Itens</a></li>
+                                <li class="divider"></li>
+                                <li><a href="/SIGATESTES/administracao/AssociacaoFamiliaOrgaosGerenciais/apresentaBuscar.action">Associar Família – Órgão Gerencial</a></li>
+                                <li class="divider"></li>
+                                <li><a href="/SIGATESTES/administracao/AssociacaoFamiliaOrgaosTecnicos/apresentaBuscar.action">Associar Família – Órgão Técnico</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+            </div>
+        </div>
+
+        <!-- breadcrumb
+        ==================================================  -->
+    <ol class="breadcrumb">
+			<li class="home"><a href="/SIGATESTES/.action"></a></li>
+			<li><a href="#">Administração</a></li>
+			<li class="last"><a href="#">Visualizar Funcionalidade</a></li>
+		</ol>
+
+        <div class="actions">
+	    <img src="/static/images/help.png"> Ajuda
+	    <img src="/static/images/phone.png"> Suporte
+	    <a href="/SIGATESTES/administracao/Usuario/sairSistema.action"><img class="siga" src="/static/images/out.png" alt="Sair do sistema" /> Sair</a>
+        </div>
+
+        <!-- Marketing messaging and featurettes
+        ================================================== -->
+        <!-- Wrap the rest of the page in another container to center all the content. -->
+        <div class="container basicContent">
+
+            <div>
+			<script type="text/javascript">
+				$(document).ready(function() {
+
+                                    var table = $('#dataTable').dataTable({
+                                        "searching": false,
+                                        "processing": true,
+                                        "paging": true,
+                                        "info": true,
+                                        "order": [[1, 'asc']],
+                                        "bSortCellsTop": true,
+                                        "pageLength": 25,
+                                        "orderable": false,
+                                        "language": {
+                                            "sEmptyTable": "Nenhum registro encontrado na tabela",
+                                            "sInfo": "Mostrar _START_ até _END_ de _TOTAL_ registros",
+                                            "sInfoEmpty": "Mostrar 0 até 0 de 0 Registros",
+                                            "sInfoFiltered": "(Filtrar de _MAX_ total registros)",
+                                            "sInfoPostFix": "",
+                                            "sInfoThousands": ".",
+                                            "sLengthMenu": "Mostrar _MENU_ registros por página",
+                                            "sLoadingRecords": "Carregando...",
+                                            "sProcessing": "<img src='/static/images/ajax-loader.gif'>",
+                                            "sZeroRecords": "Nenhum registro encontrado",
+                                            "sSearch": "Pesquisar",
+                                            "oPaginate": {
+                                                "sNext": "Proximo",
+                                                "sPrevious": "Anterior",
+                                                "sFirst": "Primeiro",
+                                                "sLast": "Último"
+                                            },
+                                            "oAria": {
+                                                "sSortAscending": ": Ordenar colunas de forma ascendente",
+                                                "sSortDescending": ": Ordenar colunas de forma descendente"
+                                            }
+                                        }
+                                        ,
+                                    });
+
+                                    // Adciona uma entrada de texto para cada coluna
+                                    $('#dataTable thead th span').each( function () {
+                                            var title = $('#dataTable thead th').eq( $(this).index() ).text();
+                                            //alert ('Titulo:'+title);
+                                            $(this).html( '<input type="text" placeholder="Filtro '+title+'" />' );
+                                    } );
+
+                                    /*	// A pesquisa
+                                            table.columns().eq( 0 ).each( function ( colIdx ) {
+                                                    $( 'input', table.column( colIdx ).footer() ).on( 'keyup change', function () {
+                                                            table
+                                                                    .column( colIdx )
+                                                                    .search( this.value )
+                                                                    .draw();
+                                                    } );
+                                            } );*/
+
+                                    $('#funcionalidadeLimpar').click(function () {
+                                            $('#formFuncionalidade').trigger("reset");
+                                    });
+                                    $('#formFuncionalidade').submit(function () {
+                                        if(!$("#funcionalida_id").val()
+                                                && !$("#funcionalida_nivel").val()
+                                                && !$("#funcionalida_situacao").val()
+                                                && !$("#funcionalida_tituloEmail").val()
+                                                ) {
+                                                var texto = "Informe um parâmetro de busca.";
+                                                error(texto);
+                                                return false;
+                                        }
+                                     });
+                                     $('#modalEditar').on('show.bs.modal', function (e) {
+                                        var selectedValues = [];
+                                        $("input[name='checkboxes']:checked").each(function () {
+                                            selectedValues.push($(this).val());
+                                        });
+                                        if (!(selectedValues.length > 0)) {
+                                        //mensagem CAMPO OBRIGATORIO
+                                        error("É necessário escolher pelo menos um registro.");
+                                                return false;
+                                        }
+                                    });
+
+                                });
+
+
+
+                                function remover() {
+                                    var o = $(".exampleCheckbox").map(function() {
+                                        if (this.checked)
+                                            return $(this).val();
+                                    }).get();
+                                    alert(o);
+                                }
+                                function error(texto){
+                                    $("#mensagens #texto").html(texto);
+                                    $("#mensagens").modal('show');
+                                }
+			</script>
+		</div>
+
+		<!-- Three columns of text below the carousel -->
+		<div class="row">
+			<div class="col-lg-12">
+
+				<section id="panels" class="infor">
+					<div class="panel-header">
+                        <span><img alt="" src="/static/images/busca.png">Pesquisa </span>
+                    </div>
+                    <form id="formFuncionalidade" name="formFuncionalidade" action="/SIGATESTES/administracao/Funcionalidade/apresentaListar.action" method="post" class="form-horizontal" role="form">
+
+
+                            <div class="form-group">
+                    		<label for="inputEmail3" class="col-sm-3 control-label">Funcionalidade:</label>
+	                		<div class="col-sm-6">
+	                			<select class="form-control" id="funcionalida_id" name="idFuncionalidade">
+	                				<option value="">Selecionar</option>
+	                				<option value="0">Todas</option>
+
+                                                            <option value="17">ESP0106 - Gerenciar Funcionalidades - Bloquear</option>
+
+                                                            <option value="18">ESP0106 - Gerenciar Funcionalidades - Ativar</option>
+
+                                                            <option value="12">ESP0008 - Manter Perfis de Usuário - Alterar</option>
+
+                                                            <option value="13">ESP0008 - Manter Perfis de Usuário - Excluir</option>
+
+                                                            <option value="14">ESP0008 - Manter Perfis de Usuário - Ativar</option>
+
+                                                            <option value="15">ESP0008 - Manter Perfis de Usuário - Bloquear</option>
+
+                                                            <option value="7">ESP0008 - Manter Perfis de Usuário - Consultar</option>
+
+                                                            <option value="8">ESP0008 - Manter Perfis de Usuário - Criar</option>
+
+                                                            <option value="9">ESP0009 - Manter Usuário do Sistema - Consultar</option>
+
+                                                            <option value="10">ESP0009 - Manter Usuário do Sistema - Criar</option>
+
+                                                            <option value="11">ESP0106 - Gerenciar Funcionalidades - Consultar</option>
+
+                                                            <option value="16">ESP0106 - Gerenciar Funcionalidades - Alterar</option>
+
+                                                            <option value="19">ESP0009 - Manter Usuário do Sistema - Alterar</option>
+
+                                                            <option value="20">ESP0009 - Manter Usuário do Sistema - Excluir</option>
+
+                                                            <option value="21">ESP0009 - Manter Usuário do Sistema - Bloquear</option>
+
+	                			</select>
+	                		</div>
+	                	</div>
+      					<div class="form-group">
+                    		<label for="inputEmail3" class="col-sm-3 control-label">Nível de Acesso:</label>
+	                		<div class="col-sm-6">
+	                			<select class="form-control" id="funcionalida_nivel" name="nivelAcesso">
+	                				<option value="">Selecionar</option>
+	                				<option value="0">Todos</option>
+
+	                					<option value="1">Comum</option>
+
+	                					<option value="2">Administrativa</option>
+
+	                					<option value="3">Especial</option>
+
+	                					<option value="0">Não Informado</option>
+	                				>
+
+	                			</select>
+	                		</div>
+	                	</div>
+	                	<div class="form-group">
+                    		<label for="inputEmail3" class="col-sm-3 control-label">Situação:</label>
+	                		<div class="col-sm-6">
+	                			<select class="form-control" id="funcionalida_situacao" name="situacao">
+	                				<option value="">Selecionar</option>
+	                				<option value="0">Todos</option>
+                                                        <option value="1">Ativo</option>
+                                                        <option value="2">Bloqueado</option>
+	                			</select>
+	                		</div>
+	                	</div>
+	                	<div class="form-group">
+                    		<label for="inputEmail3" class="col-sm-3 control-label">Título do E-mail:</label>
+	                		<div class="col-sm-6">
+	                			<select class="form-control" id="funcionalida_tituloEmail" name="idMensagemFuncionalidade">
+	                				<option value="">Selecionar</option>
+	                				<option value="0">Todos</option>
+
+	                					<option value="18">Parecer de edital disponível</option>
+
+	                					<option value="19">Edital pendente de aprovação</option>
+
+	                					<option value="20">Edital liberado</option>
+
+	                					<option value="21">Edital rejeitado</option>
+
+	                					<option value="22">Licitação pendente de aprovação</option>
+
+	                					<option value="23">Licitação liberada</option>
+
+	                					<option value="24">Licitação rejeitada</option>
+
+	                					<option value="25">SIGA - Nova Licitação</option>
+
+	                					<option value="26">SIGA - Novo aviso/adendo de licitação</option>
+
+	                					<option value="27">SIGA - Licitação suspensa para retificação de itens atualização do edital</option>
+
+	                					<option value="28">SIGA - Licitação suspensa</option>
+
+	                					<option value="29">SIGA - Sessão de Pregão Eletrônico retomada</option>
+
+	                					<option value="30">SIGA - Sessão de Pregão Eletrônico suspensa</option>
+
+	                					<option value="31">SIGA - Declaração de vencedor</option>
+
+	                					<option value="32">Licitação pendente de Adjudicação</option>
+
+	                			</select>
+	                		</div>
+	                	</div>
+	                	<div class="form-group">
+                            <div class="col-sm-offset-0 col-sm-12">
+                                <div class="button-row">
+                                    <button class="btn btn-primary" id="pesquisar" type="submit">Pesquisar</button>
+                                    <button id="funcionalidadeLimpar" type="button" class="btn btn-default">Limpar</button>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+
+
+
+
+				</section>
+			</div>
+			<!-- /.col-lg-12 -->
+
+		</div>
+		<!-- /.row -->
+
+	      <!-- FOOTER -->
+	      <footer>
+	        <p class="pull-right"><a href="#">Ir para o topo</a></p>
+	        <p>Copyright 2013 SIGA - Sistema Integrado de Gestão de Aquisições - Versão 2.0. Todos os direitos reservados.</p>
+	        <p>Governo do Estado do Rio de Janeiro.</p>
+	      </footer>
+
+        </div><!-- /.container -->
+
+		<!-- MODAL -->
+		<div class="modal fade" id="modalAlterarSenha">
+		    <form id="formUsuarioAlterarSenha"  class="form-horizontal" method="POST" role="form" action="/SIGATESTES/administracao/Usuario/alterarSenha.action">
+		        <div class="modal-dialog">
+		            <div class="modal-content">
+		                <div class="modal-header">
+		                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+		                    <h4 class="modal-title">Alterar Senha</h4>
+		                </div>
+		                <div class="modal-body">
+                   			<div class="form-group">
+							     <label class="col-sm-3 control-label">Nova Senha:</label>
+							     <div class="col-sm-5">
+							         <input type="password" class="form-control" name="filtroUsuario.senha" />
+							     </div>
+						 	 </div>
+							 <div class="form-group">
+							     <label class="col-sm-3 control-label">Confirmação Nova Senha:</label>
+							     <div class="col-sm-5">
+							         <input type="password" class="form-control" name="filtroUsuario.senhaConfirmar" />
+							     </div>
+							 </div>
+		                    <div class="modal-footer">
+		                        <button type="button" class="btn btn-default" data-dismiss="modal">Não</button>
+		                        <button type="reset" class="btn btn-default"  value="Reset!" >Limpar</button>
+		                        <button type="submit" class="btn btn-primary">Gravar</button>
+		                    </div>
+		            	</div><!-- /.modal-body -->
+					</div><!-- /.modal-content -->
+            	</div><!-- /.modal-dialog -->
+        	</form>
+		</div><!-- /.modal -->
+
+		<!-- Modal de Mensagens -->
+		<div class="modal fade" id="mensagens" tabindex="-1" role="dialog" aria-hidden="true" aria-labelledby="mensagensLabel">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+				    	<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+				  	</div>
+				  	<div class="modal-body" style="padding:20px">
+				  		<section id="panels">
+							<div class="panel-header">
+								<span class="glyphicon glyphicon-warning-sign" aria-hidden="true"></span>
+								<span>Aviso</span>
+							</div>
+							<div class="form-group" style="text-align:center"><br/>
+								<p id="texto"></p>
+							</div><br/>
+						</section>
+				  	</div>
+				  	<div class="modal-footer">
+				    	<button type="button" class="btn btn-primary" data-dismiss="modal">OK</button>
+				  	</div>
+				</div>
+			</div>
+		</div>
+
+    </body>
+</html>

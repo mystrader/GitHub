@@ -1,0 +1,10 @@
+{
+  "name": "seplag",
+  "version": "0.0.2",
+  "private": true,
+  "devDependencies": {
+    "grunt": "~0.4.5",
+    "grunt-contrib-concat": "~0.5.1",
+    "grunt-contrib-uglify": "~0.9.1"
+  }
+}

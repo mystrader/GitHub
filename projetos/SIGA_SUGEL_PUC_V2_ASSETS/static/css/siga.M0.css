@@ -1,0 +1,122 @@
+@media (min-width: 1200px) {
+  .container {
+    width: 1190px;
+  }
+}
+
+.resultado 
+{
+    -moz-box-sizing: border-box;
+    background: #EDEFF0;
+    border: 1px solid #CCCCCC;
+    border-radius: 6px;
+    color: #323232;
+    cursor: pointer;
+    float: left;
+    height: 35px;
+    margin: 5px 0 0 5px;
+    padding-right: 10px;
+    text-decoration: none;
+    position: relative;
+}
+
+.resultado2
+{
+    -moz-box-sizing: border-box;
+    background: #EDEFF0;
+    border-radius: 6px;
+    color: #323232;
+    cursor: pointer;
+    float: left;
+    height: 35px;
+    margin: 5px 8px 8px 10px;
+    padding-right: 10px;
+    text-decoration: none;
+    position: relative;
+}
+/*
+.resultado img 
+{
+    padding: 10px 5px 10px 10px;
+    vertical-align: middle;
+}
+*/
+.infor 
+{
+    height: 85px;
+    display: table;
+}
+div.toolbar 
+{
+    background: repeat-x scroll left top #EAEAEA;
+    border-bottom: 1px solid #DDDDDD;
+}
+div.toolbar ul 
+{
+    float: left;
+}
+div.toolbar ul li 
+{
+    border-right: 1px solid #D0D0D0;
+    display: block;
+    float: left;
+}
+div.toolbar ul li a, div.toolbar ul li span 
+{
+    box-shadow: 1px 0 0 rgba(255, 255, 255, 0.75) inset, 0 1px 0 #FFFFFF inset;
+    color: #666666;
+    cursor: pointer;
+    display: block;
+    padding: 8px 12px;
+    text-decoration: none;
+}
+
+div.addmenu img 
+{
+    vertical-align: middle;
+}
+div.addmenu a 
+{
+    border: 1px solid #BBBBBB;
+    border-radius: 4px;
+    box-shadow: 0 1px #FFFFFF inset, 0 0 0 1px rgba(255, 255, 255, 0.7) inset, 0 2px #DADADA, 0 2px #C4C4C4, 0 2px 3px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+}
+div.addmenuFooter 
+{
+    margin: 15px 5px 5px;
+    text-align: right;
+}
+div.addmenuFooter img 
+{
+    vertical-align: middle;
+}
+div.addmenuFooter a 
+{
+    border: 1px solid #BBBBBB;
+    border-radius: 4px;
+    box-shadow: 0 1px #FFFFFF inset, 0 0 0 1px rgba(255, 255, 255, 0.7) inset, 0 2px #DADADA, 0 2px #C4C4C4, 0 2px 3px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+}
+
+.headerAssoci 
+{
+    font-size: 14px;
+    padding: 6px 12px;
+    color: #003581;
+}
+.col-sm-2-Associ
+{
+    width: 16.666666666666664%;  
+}
+.ui-tr-selected
+{
+    background-color:#1e90ff;
+}
+.separador-rowold span 
+{
+    color: #208BBD;
+    font-size: 14px;
+    font-weight: bold;
+}
+ 

@@ -1,0 +1,167 @@
+html, body {
+height: 100%;
+}
+body.login {
+    margin:0;
+    padding:0;
+	font-family: Helvetica, Arial, sans-serif;
+    font-size:14px;
+}
+a {
+    color: #3699D2;
+    text-decoration: none;
+}
+div#pagelogin
+{
+	background:url(../images/fundologin.jpg) 0 -130px;
+	background-color: #d8d8db;
+	height: 100%;
+	height: auto;
+    min-height: 100%;
+    z-index: 0;
+}
+div#loginarea
+{
+    display: table;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+
+.loginareacentro {
+    display: table-cell;
+    vertical-align: middle;
+}
+div#login
+{
+	padding:12px 16px;
+	    background-image: url("../images/arealogin.jpg");
+    border: 0 none;
+    border-radius: 14px 14px 14px 14px;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.4);
+    color: #333333;
+    font-size: 14px;
+    height: auto;
+    margin: 0 auto;
+    position: relative;
+    text-shadow: 1px 1px 1px #FFFFFF;
+    width: 360px;
+	
+}
+
+.login-logo {
+    border-bottom: 1px solid #D1D7DF;
+    height: auto;
+    padding: 8px 0;
+    text-align: center;
+    width: 100%;
+}
+.login-title {
+    -moz-box-sizing: border-box;
+    border-bottom: 1px solid #D1D7DF;
+    border-top: 1px solid #FFFFFF;
+    color: #333333;
+    font-size: 18px;
+    font-weight: normal;
+    height: auto;
+    line-height: normal;
+    margin: 0;
+    padding: 10px 0;
+    text-align: center;
+    width: 100%;
+}
+div#login h1
+{
+	color:#ffffff;
+	padding:0 8px 8px 8px;
+	font-size:18px;
+	margin:0;
+	position:relative;
+	text-align: center;
+}
+
+.login-input-area {
+    -moz-box-sizing: border-box;
+    border-bottom: 1px solid transparent;
+    color: #333333;
+    font-weight: normal;
+    height: auto;
+    line-height: normal;
+    margin: -11px 0 0;
+    padding: 20px 0;
+    position: relative;
+    text-align: center;
+    text-shadow: 1px 1px 1px #FFFFFF;
+    width: 100%;
+}
+
+.login-input-area input[type="text"], .login-input-area input[type="password"] {
+    display: block;
+    margin: 0 auto 10px;
+    width: 256px;
+}
+select, textarea, input[type="text"], input[type="password"], input[type="datetime"], input[type="datetime-local"], input[type="date"], input[type="month"], input[type="time"], input[type="week"], input[type="number"], input[type="email"], input[type="url"], input[type="search"], input[type="tel"], input[type="color"], .uneditable-input {
+    -moz-box-sizing: border-box;
+    border: 1px solid #D1D7DF;
+    border-radius: 4px 4px 4px 4px;
+    box-shadow: 2px 2px 3px -1px rgba(0, 0, 0, 0.1) inset, 0 1px 1px white;
+    color: #333333;
+    display: inline-block;
+    font-size: 14px;
+    height: 30px;
+    line-height: 20px;
+    margin: 15px 0;
+    padding: 0 10px;
+    text-shadow: none;
+    vertical-align: middle;
+    width: 100%;
+}
+.btn {
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    background-color: #E6E6E6;
+    background-image: linear-gradient(to bottom, #EFEFEF, #D8D8D8);
+    background-repeat: repeat-x;
+    border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) #B8B8B8;
+    border-image: none;
+    border-radius: 4px 4px 4px 4px;
+    border-style: solid;
+    border-width: 1px;
+    box-shadow: 0 1px 1px 0 rgba(255, 255, 255, 0.45) inset;
+    color: #666666;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 11.9px;
+    line-height: 20px;
+    margin-bottom: 0;
+    padding: 4px 15px;
+    text-align: center;
+    text-shadow: 0 1px 0 rgba(255, 255, 255, 0.75);
+    vertical-align: middle;
+}
+.btn-login {
+    margin-top: 10px;
+    width: 256px;
+}
+.btn-success {
+    background-color: #4992C9;
+    background-image: linear-gradient(to bottom, #1B75BB, #4992C9);
+    background-repeat: repeat-x;
+    border-color: #4992C9;
+    color: #FFFFFF;
+    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.4);
+}
+.btn-large {
+    border-radius: 6px 6px 6px 6px;
+    font-size: 17.5px;
+    padding: 6px 20px;
+}
+.esqueceu {
+    display: inline-block;
+    margin-top: 20px;
+}
