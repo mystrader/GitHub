@@ -1,310 +1,118 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html class="no-js">
   <head>
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SIGA - PADRÕES DE INTERFACE</title>
     <meta name="description" content="">
-    <meta name="author" content="">
-    <link rel="shortcut icon" href="docs-assets/ico/favicon.png">
+    <meta name="viewport" content="width=device-width">
+    <link rel="shortcut icon" href="/favicon.png">
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+    <!-- build:css(.) styles/vendor.css -->
+    <!-- bower:css -->
+    <!-- endbower -->
+    <!-- endbuild -->
+    <!-- build:css(.tmp) styles/main.css -->
+    <link rel="stylesheet" href="styles/main.css">
+    <!-- endbuild -->
+    <!-- build:js scripts/vendor/modernizr.js -->
+    <script src="bower_components/modernizr/modernizr.js"></script>
+    <!-- endbuild -->
 
-    <title>SIGA2</title>
-
-    <!-- Bootstrap core CSS -->
-    <link href="css/bootstrap.css" rel="stylesheet">
-
-    <!-- Just for debugging purposes. Don't actually copy this line! -->
-    <!--[if lt IE 9]><script src="../../docs-assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
-
-    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-      <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
-    <![endif]-->
-
-    <!-- Custom styles for this template -->
-
-    <link href="css/old_siga.css" rel="stylesheet">
-    <link href="css/siga.css" rel="stylesheet">
-    <link href="css/docs.css" rel="stylesheet">
   </head>
-  <body>
-<!-- HEADER + NAVBAR
-================================================== -->
+	<body>
+
     <header>
         <div class="container-fluid">
+           <div class="row">
+               <div class="col-md-12">
+                   <div class="siga">
+                       <img src="/images/logo.png" alt="">
+                   </div>
+                   <div class="gov">
+                       <img src="/images/govRio.jpg" alt="">
+                   </div>
+               </div>
+           </div>
             <div class="row">
-                <div class="col-md-12">
-                    <div class="logo siga">
-                        <a href="index.html">
-                            <img class="siga"
-                                 src="images/logo2.png" alt="SIGA">
-                        </a>
-                    </div>
-                    <div class="logo gov">
-                        <img src="images/govRio.jpg">
-                    </div>
-                </div>
-            </div>
+                    <!-- Fixed navbar -->
+                    <nav class="navbar navbar-default">
+                      <div class="container-fluid">
+                        <div class="navbar-header">
+                          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                          </button>
+                        </div>
+                        <div id="navbar" class="navbar-collapse collapse">
+                          <ul class="nav navbar-nav">
+                            <li class="active"><a href="#">Home</a></li>
+                            <li><a href="#about">About</a></li>
+                            <li><a href="#contact">Contact</a></li>
+                            <li class="dropdown">
+                              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Dropdown <span class="caret"></span></a>
+                              <ul class="dropdown-menu" role="menu">
+                                <li><a href="#">Action</a></li>
+                                <li><a href="#">Another action</a></li>
+                                <li><a href="#">Something else here</a></li>
+                                <li class="divider"></li>
+                                <li class="dropdown-header">Nav header</li>
+                                <li><a href="#">Separated link</a></li>
+                                <li><a href="#">One more separated link</a></li>
+                              </ul>
+                            </li>
+                          </ul>
+                          <ul class="nav navbar-nav navbar-right">
+                            <li><a href="../navbar/">Default</a></li>
+                            <li><a href="../navbar-static-top/">Static top</a></li>
+                            <li class="active"><a href="./">Fixed top <span class="sr-only">(current)</span></a></li>
+                          </ul>
+                        </div><!--/.nav-collapse -->
+                      </div>
+                    </nav>
+            </div><!--/.row -->
         </div>
-<!-- NAVBAR -->
-        <nav class="navbar navbar-default">
-            <div class="row">
-                <div class="container">
-                  <div class="navbar-header">
-                    <button type="button" class="navbar-toggle collapsed" 
-                     data-toggle="collapse"
-                     data-target="#navbar"
-                     aria-expanded="false" aria-controls="navbar">
-                      <span class="sr-only">Toggle navigation</span>
-                      <span class="icon-bar"></span>
-                      <span class="icon-bar"></span>
-                      <span class="icon-bar"></span>
-                    </button>
-                  </div>
-                  <div id="navbar" class="navbar-collapse collapse">
-                    <ul class="nav navbar-nav">
-                      <li class="active"><a href="#">Home</a></li>
-                      <li><a href="#">About</a></li>
-                      <li><a href="#">Contact</a></li>
-                      <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Dropdown <span class="caret"></span></a>
-                        <ul class="dropdown-menu" role="menu">
-                          <li><a href="#">Action</a></li>
-                          <li><a href="#">Another action</a></li>
-                          <li><a href="#">Something else here</a></li>
-                          <li class="divider"></li>
-                          <li class="dropdown-header">Nav header</li>
-                          <li><a href="#">Separated link</a></li>
-                          <li><a href="#">One more separated link</a></li>
-                        </ul>
-                      </li>
-                    </ul>
-                    <ul class="nav navbar-nav navbar-right">
-                      <li class="active"><a href="./">Default <span class="sr-only">(current)</span></a></li>
-                      <li><a href="../navbar-static-top/">Static top</a></li>
-                      <li><a href="../navbar-fixed-top/">Fixed top</a></li>
-                    </ul>
-                  </div><!--/.nav-collapse -->
-                </div>
-            </div>
-        </nav><!-- NAVBAR -->
     </header>
-<!-- NAVBAR
-================================================== --
-    
 
-      <div class="container">
+    <div class="container">
 
-        <div class="navbar navbar-inverse navbar-static-top" role="navigation">
-          <div class="container">
-            <div class="navbar-header">
-              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-              </button>
-            </div>
-            <div class="navbar-collapse collapse">
-              <ul class="nav navbar-nav">
-                <li class="active dropdown">
-                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Requisição<b class="caret"></b></a>
-                <ul class="dropdown-menu">
-                    	<li><a href="index2.html">Requisitar</a></li>
-                        <li><a href="#">Carrinho de Compras</a></li>
-                        <li><a href="#">Acompanhamento de Requisição</a></li>
-                        <li><a href="#">Aprovação de Requisição</a></li>
-                        <li><a href="#">Definição de Processos</a></li>
-                        <li><a href="#">Aprovação de Processos</a></li>
-                        <li><a href="#">Acompanhamento de RAL</a></li>
-                        <li><a href="#">Consulta de Itens</a></li>
-                  </ul>
-                </li>
-                <li><a href="#about">SRP &amp; BP</a></li>
-                <li><a href="#contact">Licit &amp; Disp</a></li>
-                <li class="dropdown">
-                  <a href="#" class="dropdown-toggle" data-toggle="dropdown">Licit &amp; Disp Presencial <b class="caret"></b></a>
-                  <ul class="dropdown-menu">
-                    <li><a href="#">Action</a></li>
-                    <li><a href="#">Another action</a></li>
-                    <li><a href="#">Something else here</a></li>
-                    <li class="divider"></li>
-                    <li class="dropdown-header">Nav header</li>
-                    <li><a href="#">Separated link</a></li>
-                    <li><a href="#">One more separated link</a></li>
-                  </ul>
-                </li>
-                	<li><a href="#">Compra Direta</a></li>
-                    <li><a href="#">Contratação</a></li>
-                    <li><a href="#">Cadastro</a></li>
-                    <li><a href="#">Gestão</a></li>
-                    <li><a href="#">Almoxarifado</a></li>
-              </ul>
-            </div>
-          </div>
-        </div>
-
-      </div>
-    
-    
-     <!-- breadcrumb
-    ==================================================  -- 
-    <ol class="breadcrumb">
-  		<li class="home"><a href="index.html"></a></li>
-		<li><a href="#">Requisição</a></li> 
-        <li><a href="index2.html">Requisitar</a></li>
-        <li class="last"><a href="#">Lista de Requisições</a></li>
-	</ol>
-	    <div class="actions">
-            	<img src="images/help.png"> Help
-            	<img src="images/phone.png"> Suporte
-            	<img src="images/out.png"> Sair
-            </div>
-
-    <!-- Marketing messaging and featurettes
-    ================================================== -->
-    <!-- Wrap the rest of the page in another container to center all the content. -->
-
-    <div class="container basicContent">
-
-      <!-- Three columns of text below the carousel -->
-      <div class="row">
-        <div class="col-lg-12">
-		
-       <section id="panels" class="infor">
-			<div class="panel-header">
-			<span>Consultar Requisições</span>
-			</div>
-           <div class="resultado">
-           <a href="#"><span class=""><b>06</b> Itens Encontrados</span></a>
-                    </div> 
-           <div class="resultado">
-           <a href="index2.html"><span class="">Nova Consulta</span>
-                       </a>
-            </div> 
-            <div class="resultado">
-           <a href="index7.html"><span class="">Novo Item</span>
-                       </a>
-            </div>
-            <div class="resultado">
-           <a href="#"><span class="">Imprimir</span>
-                       </a>
-            </div> 
-                        
-		</section> 
-        	
-       <section id="panels">
-        <div class="panel-header">
-            <span class=""><img alt="" src="images/lista.png"> Lista de Requisições</span>
-        </div> 
-
-        <div class="table-responsive">
-      <table class="table table-bordered table-striped">
-        <thead>
-          <tr>
-            <th><input type="checkbox"></th>
-            <th>Requisição</th>
-            <th>Processo</th>
-            <th>Unidade</th>
-            <th>Data</th>
-            <th>Status</th>
-          </tr>
-        </thead>
-
-        <tbody class="table-hover">
-          <tr>
-			<td><input type="checkbox"> </td>
-            <td><a href="index4.html"> PAM 0104/2013 </a></td>
-			<td>E-01/036/725/2013/2013</td>
-			<td>120200 - SEPLAG - SUB. RECURSOS LOGÍSTICOS - SUBSECRETARIA DE RECURSOS LOGÍSTICOS</td>
-			<td>06/12/2013</td>
-			<td><b>Em Processo</b></td>
-          </tr>
-          <tr>
-			<td><input type="checkbox"> </td>
-            <td><a href="index4.html"> PAM 0104/2013 </a></td>
-			<td>E-01/036/725/2013/2013</td>
-			<td>120200 - SEPLAG - SUB. RECURSOS LOGÍSTICOS - SUBSECRETARIA DE RECURSOS LOGÍSTICOS</td>
-			<td>06/12/2013</td>
-			<td><b>Em Processo</b></td>
-          </tr>
-          <tr>
-			<td><input type="checkbox"> </td>
-            <td><a href="index4.html"> PAM 0104/2013 </a></td>
-			<td>E-01/036/725/2013/2013</td>
-			<td>120200 - SEPLAG - SUB. RECURSOS LOGÍSTICOS - SUBSECRETARIA DE RECURSOS LOGÍSTICOS</td>
-			<td>06/12/2013</td>
-			<td><b>Em Processo</b></td>
-          </tr>
-          <tr>
-			<td><input type="checkbox"> </td>
-            <td><a href="index4.html"> PAM 0104/2013 </a></td>
-			<td>E-01/036/725/2013/2013</td>
-			<td>120200 - SEPLAG - SUB. RECURSOS LOGÍSTICOS - SUBSECRETARIA DE RECURSOS LOGÍSTICOS</td>
-			<td>06/12/2013</td>
-			<td><b>Em Processo</b></td>
-          </tr>
-          <tr>
-			<td><input type="checkbox"> </td>
-            <td><a href="index4.html"> PAM 0104/2013 </a></td>
-			<td>E-01/036/725/2013/2013</td>
-			<td>120200 - SEPLAG - SUB. RECURSOS LOGÍSTICOS - SUBSECRETARIA DE RECURSOS LOGÍSTICOS</td>
-			<td>06/12/2013</td>
-			<td><b>Em Processo</b></td>
-          </tr>
-          <tr>
-			<td><input type="checkbox"> </td>
-            <td><a href="index4.html"> PAM 0104/2013 </a></td>
-			<td>E-01/036/725/2013/2013</td>
-			<td>120200 - SEPLAG - SUB. RECURSOS LOGÍSTICOS - SUBSECRETARIA DE RECURSOS LOGÍSTICOS</td>
-			<td>06/12/2013</td>
-			<td><b>Em Processo</b></td>
-          </tr>
-        </tbody>
-      </table>
-                
-    </div>
-         <div class="toolbar-row">
-            <div class="toolbar top clearfix">
-              <ul>
-                 <li><a href="#" title="Escolher"><img src="images/accept.png" width="16" height="16"> Escolher</a></li>
-                 <li><a href="#" title="Apagar"><img src="images/cross.png" width="16" height="16"> Apagar</a></li>
-                 <li><a href="index4.html" title="Editar"><img src="images/edit.png" width="16" height="16"> Editar</a></li>
-               </ul>
-         	</div>
-         </div>
-    </section>
-    <ul class="pagination">
-      <li class="disabled"><a href="#">«</a></li>
-      <li class="active"><a href="#">1 <span class="sr-only">(current)</span></a></li>
-      <li><a href="#">2</a></li>
-      <li><a href="#">3</a></li>
-      <li><a href="#">4</a></li>
-      <li><a href="#">5</a></li>
-      <li><a href="#">»</a></li>
-   </ul>            
-        </div><!-- /.col-lg-6 -->
-        
-      </div><!-- /.row -->
+      <!-- Main component for a primary marketing message or call to action -->
 
 
-
-      <!-- FOOTER -->
-      <footer>
-        <p class="pull-right"><a href="#">Ir para o topo</a></p>
-        <p>Copyright 2013 SIGA - Sistema Integrado de Gestão de Aquisições. Todos os direitos reservados.</p> 
-        <p>Governo do Estado do Rio de Janeiro.</p> 
-      </footer>
-
-    </div><!-- /.container -->
+    </div> <!-- /container -->
 
 
-    <!-- Bootstrap core JavaScript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
-    <script src="dist/js/bootstrap.min.js"></script>
-    <script src="docs-assets/js/holder.js"></script>
-  </body>
+    <!-- build:js(.) scripts/vendor.js -->
+    <!-- bower:js -->
+    <script src="bower_components/jquery/dist/jquery.js"></script>
+    <script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/affix.js"></script>
+    <script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/alert.js"></script>
+    <script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/button.js"></script>
+    <script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/carousel.js"></script>
+    <script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/collapse.js"></script>
+    <script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/dropdown.js"></script>
+    <script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/tab.js"></script>
+    <script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/transition.js"></script>
+    <script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/scrollspy.js"></script>
+    <script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/modal.js"></script>
+    <script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/tooltip.js"></script>
+    <script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/popover.js"></script>
+    <!-- endbower -->
+    <!-- endbuild -->
+
+    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+    <script>
+      (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+      function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+      e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+      e.src='//www.google-analytics.com/analytics.js';
+      r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+      ga('create','UA-XXXXX-X');ga('send','pageview');
+    </script>
+
+        <!-- build:js({app,.tmp}) scripts/main.js -->
+        <script src="scripts/main.js"></script>
+        <!-- endbuild -->
+</body>
 </html>
