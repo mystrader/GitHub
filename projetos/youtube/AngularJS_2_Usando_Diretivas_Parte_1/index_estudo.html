@@ -1,0 +1,76 @@
+<html ng-app="listaTelefonica">
+<head>
+	<title>Lista Telefonica</title>
+	<link rel="stylesheet" type="text/css" href="lib/bootstrap/bootstrap.css">
+	<style>
+		.jumbotron {
+			width: 400px;
+			text-align: center;
+			margin-top: 20px;
+			margin-left: auto;
+			margin-right: auto;
+		}
+		.table {
+			margin-top: 20px;
+		}
+		.form-control {
+			margin-bottom: 5px;
+		}
+	</style>
+	<script src="lib/angular/angular.js"></script>
+	<script>
+		angular.module("listaTelefonica", []);
+		
+		
+		angular.module("listaTelefonica").controller("listaTelefonicaCtrl", function ($scope) {
+			$scope.app = "Lista de xxxx";
+			
+			$scope.contatos = [
+				{casal	: "Pedro", telefone: "219998888",data : "31/06/2015"},
+				{casal: "Ana", telefone: "2199998877", data : "10/10/2015"} ,
+				{casal: "Maria", telefone: "2899998866",data : "05/02/2016"}
+			];
+			
+			$scope.fornecedores = [
+				{nome	: "Cleber", telefone: "1354678"},
+				{nome: "Cleber", telefone: "2234568"} ,
+				{nome: "ReportAlbum", telefone: "2234568"}
+			];
+			
+			$scope.adicionarContato = function (contato) {
+				$scope.contatos.push(angular.copy(contato));
+				delete $scope.contato;
+			};
+		});
+	</script>
+</head>
+<body ng-controller="listaTelefonicaCtrl">
+	<div class="jumbotron">
+		<h2>{{teste}}</h2>
+		<h3>{{app}}</h3>
+		<table class="table table-striped">
+			<tr>
+				<th>Nome</th>
+				<th>Telefone</th>
+			</tr>
+			<tr ng-repeat="contato in contatos">
+				<td>{{contato.casal}}</td>
+				<td>{{contato.telefone}}</td>
+			</tr>
+			<tr ng-repeat="fornecedor in fornecedores">
+				<td>{{fornecedor.nome}}</td>
+				<td>{{fornecedor.telefone}}</td>
+			</tr>
+		</table>
+		<hr/>
+		<input class="form-control" type="text" ng-model="contato.casal" placeholder="Casal"/>
+		<input class="form-control" type="text" ng-model="contato.telefone" placeholder="Telefone"/>
+
+		
+		<button class="btn btn-primary btn-block" ng-click="adicionarContato(contato)">Adicionar Contato</button>
+			<button class="btn btn-primary btn-block" ng-click="adicionarContato(fornecedor)">Adicionar Contato</button>
+		{{contato}}
+	</div>
+</body>
+</html>
+

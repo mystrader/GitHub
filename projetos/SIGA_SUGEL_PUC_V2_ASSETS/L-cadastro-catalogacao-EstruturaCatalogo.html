@@ -12,28 +12,30 @@
 
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
     <head>
+        <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge; charset=UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="description" content="SIGA2">
         <meta name="author" content="SEPLAG">
 
         <title>SIGA2</title>
-        <link rel="shortcut icon" href="/static/images/favicon.png"/>
+        <link rel="shortcut icon" href="static/images/favicon.png"/>
 
         <!-- Bootstrap core CSS -->
-        <link rel="stylesheet" type="text/css" href="/static/css/bootstrap.css" />
-        <link rel="stylesheet" type="text/css" href="/static/css/sigaCustomBootstrap.css" />
-        <link rel="stylesheet" type="text/css" href="/static/css/dataTables.bootstrap.css" >
+        <link rel="stylesheet" type="text/css" href="static/css/bootstrap.css" />
+        <link rel="stylesheet" type="text/css" href="static/css/sigaCustomBootstrap.css" />
+        <link rel="stylesheet" type="text/css" href="static/css/dataTables.bootstrap.css" >
 
          <!-- Custom styles for this template -->
-         <link rel="stylesheet" type="text/css" href="/static/css/siga.css" />
-         <link rel="stylesheet" type="text/css" href="/static/css/siga.M0.css" />
-         <link rel="stylesheet" type="text/css" href="/static/css/docs.css" />
-         <link rel="stylesheet" type="text/css" href="/static/css/tabdrop.css" />
-         <link rel="stylesheet" type="text/css" href="/static/css/datepicker.css">
-         <link rel="stylesheet" type="text/css" href="/static/css/themes/default/style.min.css" />
+         <link rel="stylesheet" type="text/css" href="static/css/siga.css" />
+         <link rel="stylesheet" type="text/css" href="static/css/siga.M0.css" />
+         <link rel="stylesheet" type="text/css" href="static/css/docs.css" />
+         <link rel="stylesheet" type="text/css" href="static/css/tabdrop.css" />
+         <link rel="stylesheet" type="text/css" href="static/css/datepicker.css">
+         <link rel="stylesheet" type="text/css" href="static/css/themes/default/style.min.css" />
+         <link rel="stylesheet" type="text/css" href="static/css/siga_fix.css" />
 
          <style type="text/css">
         	.dropdown-submenu{position:relative;}
@@ -44,13 +46,13 @@
          </style>
 
         <!-- Just for debugging purposes. Don't actually copy this line! -->
-        <!--[if lt IE 9]><script type="text/javascript" src="/SIGATESTES/static/js/ie8-responsive-file-warning.js"></script><![endif]-->
+        <!--[if lt IE 9]><script type="text/javascript" src="/SIGATESTESstatic/js/ie8-responsive-file-warning.js"></script><![endif]-->
 
         <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
 
         <!--[if lt IE 9]>
-          <script src="/static/js/html5shiv.js"></script>
-          <script src="/static/js/respond.min.js"></script>
+          <script src="static/js/html5shiv.js"></script>
+          <script src="static/js/respond.min.js"></script>
         <![endif]-->
 
         <!-- sj:head jqueryui="true" jquerytheme="flick" locale="pt-BR" / -->
@@ -59,22 +61,22 @@
 		    Bootstrap core JavaScript
 		    ================================================== -->
 		    <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
-		    <script type="text/javascript" src="/static/js/bootstrap.min.js"></script>
-         	<script type="text/javascript" src="/static/js/holder.js"></script>
-            <script type="text/javascript" src="/static/js/jquery.dataTables.min.js"></script>
-        	<script type="text/javascript" src="/static/js/dataTables.bootstrap.js"></script>
+		    <script type="text/javascript" src="static/js/bootstrap.min.js"></script>
+         	<script type="text/javascript" src="static/js/holder.js"></script>
+            <script type="text/javascript" src="static/js/jquery.dataTables.min.js"></script>
+        	<script type="text/javascript" src="static/js/dataTables.bootstrap.js"></script>
 
         	 <!-- Scripts utilizados no sistema -->
-	        <script type="text/javascript" src="/static/js/siga.js"></script>
-	        <script type="text/javascript" src="/static/js/siga_m0.js"></script>
-            <script type="text/javascript" src="/static/js/bootstrap-datepicker.js"></script>
+	        <script type="text/javascript" src="static/js/siga.js"></script>
+	        <script type="text/javascript" src="static/js/siga_m0.js"></script>
+            <script type="text/javascript" src="static/js/bootstrap-datepicker.js"></script>
 
-            <script type="text/javascript" src="/static/js/jquery.mask.min.js"></script>
-	        <script type="text/javascript" src="/static/js/jstree.min.js"></script>
+            <script type="text/javascript" src="static/js/jquery.mask.min.js"></script>
+	        <script type="text/javascript" src="static/js/jstree.min.js"></script>
 
-			<script type="text/javascript" src="/static/js/jquery.validate.min.js"></script>
-			<script type="text/javascript" src="/static/js/jquery.bsAlerts.min.js"></script>
-			<script type="text/javascript" src="/static/js/messages_pt_BR.min.js"></script>
+			<script type="text/javascript" src="static/js/jquery.validate.min.js"></script>
+			<script type="text/javascript" src="static/js/jquery.bsAlerts.min.js"></script>
+			<script type="text/javascript" src="static/js/messages_pt_BR.min.js"></script>
 
 
 
@@ -108,8 +110,8 @@
     <body>
 
 	<div class="navbar-wrapper">
-        <div class="logosiga"> <a href="#"><img class="siga" src="/static/images/logo2.png" alt="SIGA"></a></div>
-        <div><img class="gov" src="/static/images/govRio.jpg"></div>
+        <div class="logosiga"> <a href="#"><img class="siga" src="static/images/logo2.png" alt="SIGA"></a></div>
+        <div><img class="gov" src="static/images/govRio.jpg"></div>
      	<div class="user-box">
 		<div class="user-box-inner">
                     <div class="user-info">
@@ -373,9 +375,9 @@
         </ol>
 
         <div class="actions">
-	    <img src="/static/images/help.png"> Ajuda
-	    <img src="/static/images/phone.png"> Suporte
-	    <a href="/SIGATESTES/administracao/Usuario/sairSistema.action"><img class="siga" src="/static/images/out.png" alt="Sair do sistema" /> Sair</a>
+	    <img src="static/images/help.png"> Ajuda
+	    <img src="static/images/phone.png"> Suporte
+	    <a href="/SIGATESTES/administracao/Usuario/sairSistema.action"><img class="siga" src="static/images/out.png" alt="Sair do sistema" /> Sair</a>
         </div>
 
         <!-- Marketing messaging and featurettes
@@ -733,7 +735,7 @@
             <div class="col-lg-12">
                 <section id="panels">
                     <div class="panel-header">
-                        <span><img alt="" src="/static/images/busca.png">Manutenção de Estrutura do Catálogo </span>
+                        <span><img alt="" src="static/images/busca.png">Manutenção de Estrutura do Catálogo </span>
                     </div>
                     <form id="frmEstrutCatalog" name="frmEstrutCatalog" action="#" method="post" class="form-horizontal" role="form">
 <table class="form-horizontal">
@@ -788,9 +790,9 @@
                             		<option value="">Selecionar</option>
                             	</select>
                             </div>
-                            <div style="float:left"><a id="criarGrupo" href="#" title="Criar novo grupo"><img src="/static/images/addNovo.png" ></a></div>
-                            <div style="float:left;padding-left:10px"><a id="alterarGrupo"  href="#" title="Editar grupo"><img src="/static/images/edit.png" width="16" height="16"> </a></div>
-                            <div style="float:left;padding-left:10px"><a id="listarGrupo"  href="#" title="Consultar grupos"><img src="/static/images/findNovo.png" width="16" height="16"> </a></div>
+                            <div style="float:left"><a id="criarGrupo" href="#" title="Criar novo grupo"><img src="static/images/addNovo.png" ></a></div>
+                            <div style="float:left;padding-left:10px"><a id="alterarGrupo"  href="#" title="Editar grupo"><img src="static/images/edit.png" width="16" height="16"> </a></div>
+                            <div style="float:left;padding-left:10px"><a id="listarGrupo"  href="#" title="Consultar grupos"><img src="static/images/findNovo.png" width="16" height="16"> </a></div>
                         </div>
                         <div class="form-group">
                             <label for="inputEmail3" class="col-sm-3 control-label">Classe:</label>
@@ -799,9 +801,9 @@
                                 	<option value="">Selecionar</option>
                                 </select>
                             </div>
-                            <div style="float:left"><a id="criarClasse" href="#" title="Criar nova classe"><img src="/static/images/addNovo.png" ></a></div>
-                            <div style="float:left;padding-left:10px"><a id="alterarClasse"  href="#" title="Editar classe"><img src="/static/images/edit.png" width="16" height="16"> </a></div>
-                            <div style="float:left;padding-left:10px"><a id="listarClasse"  href="#" title="Consultar classes"><img src="/static/images/findNovo.png" width="16" height="16"> </a></div>
+                            <div style="float:left"><a id="criarClasse" href="#" title="Criar nova classe"><img src="static/images/addNovo.png" ></a></div>
+                            <div style="float:left;padding-left:10px"><a id="alterarClasse"  href="#" title="Editar classe"><img src="static/images/edit.png" width="16" height="16"> </a></div>
+                            <div style="float:left;padding-left:10px"><a id="listarClasse"  href="#" title="Consultar classes"><img src="static/images/findNovo.png" width="16" height="16"> </a></div>
                         </div>
                         <div class="form-group">
                             <label for="inputEmail3" class="col-sm-3 control-label">Artigo:</label>
@@ -810,13 +812,13 @@
                                 	<option value="">Selecionar</option>
                                 </select>
                             </div>
-                            <div style="float:left"><a id="criarArtigo"  href="#" title="Criar novo artigo"><img src="/static/images/addNovo.png" ></a></div>
-                            <div style="float:left;padding-left:10px"><a id="alterarArtigo" href="#" title="Editar artigo"><img src="/static/images/edit.png" width="16" height="16"> </a></div>
-                            <div style="float:left;padding-left:10px"><a id="listarArtigo" href="#" title="Consultar artigos"><img src="/static/images/findNovo.png" width="16" height="16"> </a></div>
-                        	<div style="float:left;padding-left:10px"><a id="modalExcluir" href="#" title="Excluir artigo"><img src="/static/images/deletar.png" width="16" height="16"></a></div>
-							<div style="float:left;padding-left:10px"><a href="#modalBloquear" data-toggle="modal" data-target="#modalBloquear" title="Bloquear artigo"><img src="/static/images/lockN.png" width="16" height="16"></a></div>
-							<div style="float:left;padding-left:10px"><a href="#modalDesbloquear" data-toggle="modal" data-target="#modalDesbloquear" title="Desbloquear artigo"><img src="/static/images/unlockN.png" width="16" height="16"></a></div>
-							<div style="float:left;padding-left:10px"><a id="lnkRemanejar" href="#" title="Remanejar artigo"><img src="/static/images/alterar.png" width="16" height="16"></a></div>
+                            <div style="float:left"><a id="criarArtigo"  href="#" title="Criar novo artigo"><img src="static/images/addNovo.png" ></a></div>
+                            <div style="float:left;padding-left:10px"><a id="alterarArtigo" href="#" title="Editar artigo"><img src="static/images/edit.png" width="16" height="16"> </a></div>
+                            <div style="float:left;padding-left:10px"><a id="listarArtigo" href="#" title="Consultar artigos"><img src="static/images/findNovo.png" width="16" height="16"> </a></div>
+                        	<div style="float:left;padding-left:10px"><a id="modalExcluir" href="#" title="Excluir artigo"><img src="static/images/deletar.png" width="16" height="16"></a></div>
+							<div style="float:left;padding-left:10px"><a href="#modalBloquear" data-toggle="modal" data-target="#modalBloquear" title="Bloquear artigo"><img src="static/images/lockN.png" width="16" height="16"></a></div>
+							<div style="float:left;padding-left:10px"><a href="#modalDesbloquear" data-toggle="modal" data-target="#modalDesbloquear" title="Desbloquear artigo"><img src="static/images/unlockN.png" width="16" height="16"></a></div>
+							<div style="float:left;padding-left:10px"><a id="lnkRemanejar" href="#" title="Remanejar artigo"><img src="static/images/alterar.png" width="16" height="16"></a></div>
 
 							<!-- Modal Bloquear -->
 							<div class="modal fade" id="modalBloquear" tabindex="-1" role="dialog" aria-labelledby="modalBloquearLabel" aria-hidden="true" style="padding-top:150px;">
@@ -828,7 +830,7 @@
 							        <div class="modal-body" style="padding:20px">
 							            <section id="panels">
 							                <div class="panel-header">
-							                    <span><img src="/static/images/add.png" alt=""> Bloquear Artigo</span>
+							                    <span><img src="static/images/add.png" alt=""> Bloquear Artigo</span>
 							                </div>
 						                    <div class="form-group">
 					                            <label class="col-sm-3 control-label">Justificativa:</label>
@@ -857,7 +859,7 @@
 							        <div class="modal-body" style="padding:20px">
 							            <section id="panels">
 							                <div class="panel-header">
-							                    <span><img src="/static/images/add.png" alt=""> Desbloquear Artigo</span>
+							                    <span><img src="static/images/add.png" alt=""> Desbloquear Artigo</span>
 							                </div>
 						                    <div class="form-group">
 					                            <label class="col-sm-3 control-label">Justificativa:</label>

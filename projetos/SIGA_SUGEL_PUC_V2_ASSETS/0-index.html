@@ -1,6 +1,7 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
     <head>
+        <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge; charset=UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="description" content="SIGA2">
@@ -22,12 +23,15 @@
          <link rel="stylesheet" type="text/css" href="static/css/datepicker.css">
          <link rel="stylesheet" type="text/css" href="static/css/themes/default/style.min.css" />
 
+         <link rel="stylesheet" type="text/css" href="static/css/siga_fix.css" />
+
+
          <style type="text/css">
         	.dropdown-submenu{position:relative;}
-			.dropdown-submenu>.dropdown-menu{top:0;left:100%;margin-top:-6px;margin-left:-1px;-webkit-border-radius:0 6px 6px 6px;-moz-border-radius:0 6px 6px 6px;border-radius:0 6px 6px 6px;}
-			.dropdown-submenu>a:after{display:block;content:" ";float:right;width:0;height:0;border-color:transparent;border-style:solid;border-width:5px 0 5px 5px;border-left-color:#cccccc;margin-top:5px;margin-right:-10px;}
-			.dropdown-submenu:hover>a:after{border-left-color:#555;}
-			.dropdown-submenu.pull-left{float:none;}.dropdown-submenu.pull-left>.dropdown-menu{left:-100%;margin-left:10px;-webkit-border-radius:6px 0 6px 6px;-moz-border-radius:6px 0 6px 6px;border-radius:6px 0 6px 6px;}
+			    .dropdown-submenu>.dropdown-menu{top:0;left:100%;margin-top:-6px;margin-left:-1px;-webkit-border-radius:0 6px 6px 6px;-moz-border-radius:0 6px 6px 6px;border-radius:0 6px 6px 6px;}
+			    .dropdown-submenu>a:after{display:block;content:" ";float:right;width:0;height:0;border-color:transparent;border-style:solid;border-width:5px 0 5px 5px;border-left-color:#cccccc;margin-top:5px;margin-right:-10px;}
+			    .dropdown-submenu:hover>a:after{border-left-color:#555;}
+			    .dropdown-submenu.pull-left{float:none;}.dropdown-submenu.pull-left>.dropdown-menu{left:-100%;margin-left:10px;-webkit-border-radius:6px 0 6px 6px;-moz-border-radius:6px 0 6px 6px;border-radius:6px 0 6px 6px;}
          </style>
 
         <!-- Just for debugging purposes. Don't actually copy this line! -->
@@ -132,7 +136,7 @@
         <div class="navbar-collapse collapse" id="menu_id">
             <ul class="nav navbar-nav">
                 <li class="active dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Registro de PreÁo<b class="caret"></b></a>
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Registro de Pre√ßo<b class="caret"></b></a>
                     <ul class="dropdown-menu">
                         <li><a href="#">PLS</a></li>
                         <li class="divider"></li>
@@ -141,7 +145,7 @@
                 </li>
 
                 <li class="active dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">RequisiÁ„o<b class="caret"></b></a>
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Requisi√ß√£o<b class="caret"></b></a>
                     <ul class="dropdown-menu">
                         <li><a href="#">Carrinho</a></li>
                         <li class="divider"></li>
@@ -154,7 +158,7 @@
                 <li class="active dropdown">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown">Processo<b class="caret"></b></a>
                     <ul class="dropdown-menu">
-                        <li><a href="#">DefiniÁ„o</a></li>
+                        <li><a href="#">Defini√ß√£o</a></li>
                         <li class="divider"></li>
                         <li><a href="#">Planejamento</a></li>
                         <li class="divider"></li>
@@ -165,9 +169,9 @@
                 </li>
 
                 <li class="active dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">LicitaÁ„o<b class="caret"></b></a>
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Licita√ß√£o<b class="caret"></b></a>
                     <ul class="dropdown-menu">
-                        <li><a href="#">Preg„o</a></li>
+                        <li><a href="#">Preg√£o</a></li>
                         <li class="divider"></li>
                         <li><a href="#">Tradicionais</a></li>
                         <li class="divider"></li>
@@ -176,13 +180,13 @@
                 </li>
 
                 <li class="active dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">ContrataÁ„o<b class="caret"></b></a>
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Contrata√ß√£o<b class="caret"></b></a>
                     <ul class="dropdown-menu">
                         <li><a href="#">Contratar</a></li>
                         <li class="divider"></li>
-                        <li><a href="#">Gest„o Contratual</a></li>
+                        <li><a href="#">Gest√£o Contratual</a></li>
                         <li class="divider"></li>
-                        <li><a href="#">ContrataÁıes Especiais</a></li>
+                        <li><a href="#">Contrata√ß√µes Especiais</a></li>
                     </ul>
                 </li>
 
@@ -195,7 +199,7 @@
                         <li class="divider"></li>
                         <li><a href="#">Aceitar</a></li>
                         <li class="divider"></li>
-                        <li><a href="#">Consultar AvaliaÁ„o</a></li>
+                        <li><a href="#">Consultar Avalia√ß√£o</a></li>
                         <li class="divider"></li>
                         <li><a href="#">Entradas Diversas</a></li>
                     </ul>
@@ -204,7 +208,7 @@
                 <li class="active dropdown">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown">Almoxarifado<b class="caret"></b></a>
                     <ul class="dropdown-menu">
-                        <li class="dropdown dropdown-submenu"><a href="#" class="dropdown-toggle" data-toggle="dropdown">OperaÁ„o</a>
+                        <li class="dropdown dropdown-submenu"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Opera√ß√£o</a>
                             <ul class="dropdown-menu">
                                 <li><a href="#">Armazenamento</a></li>
                                 <li class="divider"></li>
@@ -214,13 +218,13 @@
                             </ul>
                         </li>
                     	<li class="divider"></li>
-                        <li class="dropdown dropdown-submenu"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Gest„o</a>
+                        <li class="dropdown dropdown-submenu"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Gest√£o</a>
                             <ul class="dropdown-menu">
                                 <li><a href="#">Disponibilidade</a></li>
                                 <li class="divider"></li>
-                                <li><a href="#">Invent·rio</a></li>
+                                <li><a href="#">Invent√°rio</a></li>
                                 <li class="divider"></li>
-                                <li><a href="#">RelatÛrios</a></li>
+                                <li><a href="#">Relat√≥rios</a></li>
                                 <li class="divider"></li>
                                 <li><a href="#">Parametrizar Itens</a></li>
                                 <li class="divider"></li>
@@ -230,11 +234,11 @@
                     </ul>
                 </li>
                 <li class="active dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Gest„o<b class="caret"></b></a>
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Gest√£o<b class="caret"></b></a>
                     <ul class="dropdown-menu">
                         <li><a href="#">BI</a></li>
                         <li class="divider"></li>
-                        <li><a href="#">RelatÛrios</a></li>
+                        <li><a href="#">Relat√≥rios</a></li>
                         <li class="divider"></li>
                         <li><a href="/SIGATESTES/administracao/AnalisarConformidade/apresentaCriar.action">Analisar Conformidade</a></li>
                         <li class="divider"></li>
@@ -245,9 +249,9 @@
                     <a href="/SIGATESTES/administracao/Minuta/apresentaBuscarGestao.action">Minutas</a>
                 </li>
                 <li class="active dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">AdministraÁ„o<b class="caret"></b></a>
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Administra√ß√£o<b class="caret"></b></a>
                     <ul class="dropdown-menu">
-                    	<li class="dropdown dropdown-submenu"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Par‚metros</a>
+                    	<li class="dropdown dropdown-submenu"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Par√¢metros</a>
                             <ul class="dropdown-menu">
                                 <li><a href="#">Sistema</a></li>
                                 <li class="divider"></li>
@@ -259,7 +263,7 @@
                             <ul class="dropdown-menu">
                                 <li><a href="/SIGATESTES/administracao/Evento/apresentaBuscar.action">Visualizar Log de Eventos</a></li>
                                 <li class="divider"></li>
-                                <li><a href="/SIGATESTES/administracao/Historico/apresentaBuscar.action">Visualizar HistÛrico</a></li>
+                                <li><a href="/SIGATESTES/administracao/Historico/apresentaBuscar.action">Visualizar Hist√≥rico</a></li>
                                 <li class="divider"></li>
 
 	                                <li><a href="/SIGATESTES/administracao/Almoxarifado/apresentaBuscar.action">Manter Almoxarifado</a></li>
@@ -279,17 +283,17 @@
                             </ul>
                         </li>
                         <li class="divider"></li>
-                    	<li class="dropdown dropdown-submenu"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Usu·rio</a>
+                    	<li class="dropdown dropdown-submenu"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Usu√°rio</a>
                             <ul class="dropdown-menu">
 
-	                                <li><a href="/SIGATESTES/administracao/Usuario/apresentaBuscar.action">Manter Usu·rio do Sistema</a></li>
+	                                <li><a href="/SIGATESTES/administracao/Usuario/apresentaBuscar.action">Manter Usu√°rio do Sistema</a></li>
 	                                <li class="divider"></li>
 
 
 
                                 <!-- /sec:hasRole-->
 
-	                                <li><a href="/SIGATESTES/administracao/Perfil/apresentaBuscar.action">Manter Perfis de Usu·rio</a></li>
+	                                <li><a href="/SIGATESTES/administracao/Perfil/apresentaBuscar.action">Manter Perfis de Usu√°rio</a></li>
 	                                <li class="divider"></li>
 
 
@@ -321,13 +325,13 @@
                             <li class="divider"></li>
                             <li><a href="/SIGATESTES/administracao/UsuarioFornecedor/apresentaLembrarSenha.action">Esquecimento de Senha Usuario Fornecedor</a></li>
                             <li class="divider"></li>
-                            <li><a href="/SIGATESTES/administracao/Sancao/apresentaBuscar.action">Manter SanÁ„o</a></li>
+                            <li><a href="/SIGATESTES/administracao/Sancao/apresentaBuscar.action">Manter San√ß√£o</a></li>
                             </ul>
                         </li>
                         <li class="divider"></li>
-                    	<li class="dropdown dropdown-submenu"><a href="#" class="dropdown-toggle" data-toggle="dropdown">CatalogaÁ„o</a>
+                    	<li class="dropdown dropdown-submenu"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Cataloga√ß√£o</a>
                             <ul class="dropdown-menu">
-                                <li><a href="/SIGATESTES/administracao/EstruturaCatalogo/apresentaBuscar.action">ManutenÁ„o de Estrutura do Cat·logo</a></li>
+                                <li><a href="/SIGATESTES/administracao/EstruturaCatalogo/apresentaBuscar.action">Manuten√ß√£o de Estrutura do Cat√°logo</a></li>
                                 <li class="divider"></li>
                                 <li><a href="/SIGATESTES/administracao/PropriedadeItem/apresentaBuscar.action">Manter PDM</a></li>
                                 <li class="divider"></li>
@@ -335,9 +339,9 @@
                                 <li class="divider"></li>
                                 <li><a href="#">Consultar Itens</a></li>
                                 <li class="divider"></li>
-                                <li><a href="/SIGATESTES/administracao/AssociacaoFamiliaOrgaosGerenciais/apresentaBuscar.action">Associar FamÌlia ? ”rg„o Gerencial</a></li>
+                                <li><a href="/SIGATESTES/administracao/AssociacaoFamiliaOrgaosGerenciais/apresentaBuscar.action">Associar Fam√≠lia ‚Äì √ìrg√£o Gerencial</a></li>
                                 <li class="divider"></li>
-                                <li><a href="/SIGATESTES/administracao/AssociacaoFamiliaOrgaosTecnicos/apresentaBuscar.action">Associar FamÌlia ? ”rg„o TÈcnico</a></li>
+                                <li><a href="/SIGATESTES/administracao/AssociacaoFamiliaOrgaosTecnicos/apresentaBuscar.action">Associar Fam√≠lia ‚Äì √ìrg√£o T√©cnico</a></li>
                             </ul>
                         </li>
                     </ul>
@@ -353,8 +357,10 @@
         <!-- breadcrumb
         ==================================================  -->
     <ol class="breadcrumb">
-			<li class="home last"><a href="/SIGATESTES/index.action"></a></li>
-		</ol>
+                <li class="home"><a href="/SIGATESTES/.action"></a></li>
+                <li><a href="#">Administra√ß√£o</a></li>
+                <li class="last"><a href="#">Usuario Fornecedor</a></li>
+        </ol>
 
         <div class="actions">
 	    <img src="static/images/help.png"> Ajuda
@@ -386,14 +392,14 @@
 														"orderable" : false,
 														"language" : {
 															"sEmptyTable" : "Nenhum registro encontrado na tabela",
-															"sInfo" : "Mostrar _START_ atÈ _END_ de _TOTAL_ registros",
-															"sInfoEmpty" : "Mostrar 0 atÈ 0 de 0 Registros",
+															"sInfo" : "Mostrar _START_ at√© _END_ de _TOTAL_ registros",
+															"sInfoEmpty" : "Mostrar 0 at√© 0 de 0 Registros",
 															"sInfoFiltered" : "(Filtrar de _MAX_ total registros)",
 															"sInfoPostFix" : "",
 															"sInfoThousands" : ".",
-															"sLengthMenu" : "Mostrar _MENU_ registros por p·gina",
+															"sLengthMenu" : "Mostrar _MENU_ registros por p√°gina",
 															"sLoadingRecords" : "Carregando...",
-															"sProcessing" : "<img src='static/images/ajax-loader.gif'>",
+															"sProcessing" : "<img src='/static/images/ajax-loader.gif'>",
 
 															"sZeroRecords" : "Nenhum registro encontrado",
 															"sSearch" : "Pesquisar",
@@ -401,7 +407,7 @@
 																"sNext" : "Proximo",
 																"sPrevious" : "Anterior",
 																"sFirst" : "Primeiro",
-																"sLast" : "⁄ltimo"
+																"sLast" : "√öltimo"
 															},
 															"oAria" : {
 
@@ -597,18 +603,18 @@
 
 				<section id="panels">
 					<div class="panel-headerAbas">
-						<span><img alt="" src="static/images/detalhe.png">
-							Painel de Usu·rio </span>
+						<span><img alt="" src="/static/images/detalhe.png">
+							Painel de Usu√°rio </span>
 					</div>
 					<div class="bs-example bs-example-tabs">
 
 						<ul class="nav nav-tabs" id="myTab">
 							<li class="active"><a data-toggle="tab" href="#home" id="principal_id">Principal</a></li>
 							<li class=""><a data-toggle="tab" href="#mensagens_aba" id="mensagens_id">Mensagens</a></li>
-							<li class=""><a data-toggle="tab" href="#configuracao" id="configuracao_id">ConfiguraÁ„o</a></li>
+							<li class=""><a data-toggle="tab" href="#configuracao" id="configuracao_id">Configura√ß√£o</a></li>
 							<li class=""><a data-toggle="tab" href="#alterarDados" id="alterarDadosCadastrais_id">Alterar
 									Dados Cadastrais</a></li>
-							<li class=""><a data-toggle="tab" href="" id="solicitacoes_id">SolicitaÁıes</a></li>
+							<li class=""><a data-toggle="tab" href="" id="solicitacoes_id">Solicita√ß√µes</a></li>
 						</ul>
 
 
@@ -625,10 +631,10 @@
 
 									<div class="col-lg-12 ">
 
-						<h4>&nbsp;&nbsp;InformaÁıes de Usu·rio:</h4><br>
+						<h4>&nbsp;&nbsp;Informa√ß√µes de Usu√°rio:</h4><br>
 						<div class="panel-header">
-					   		<span> Data de ⁄ltimo Login:
-			          			<b>&nbsp; 14/05/2015 ‡s 16:31:13</b>
+					   		<span> Data de √öltimo Login:
+			          			<b>&nbsp; 15/05/2015 √†s 11:07:02</b>
 					   		</spam>
 						</div>
 
@@ -637,18 +643,14 @@
 
 								</div>
 
-
-
-
-
-								<div class="row">
+								<div class="row dashboard_inicial">
 
 
 									<div class="col-lg-4 ">
 										<div id="panels" class="grid_3">
 											<div class="panel-header">
 												<div class="grabhandle">
-													<img alt="" src="static/images/caixaEntrada.png">
+													<img alt="" src="/static/images/caixaEntrada.png">
 												</div>
 												<span>Mensagens Recebidas ( 4 mais recentes) </span>
 											</div>
@@ -678,7 +680,7 @@
 										<div id="panels" class="grid_3">
 											<div class="panel-header">
 												<div class="grabhandle">
-													<img alt="" src="static/images/lista.png">
+													<img alt="" src="/static/images/lista.png">
 												</div>
 												<span>Tarefas Pendentes ( 4 mais recentes) </span>
 											</div>
@@ -688,7 +690,7 @@
 													<thead>
 														<tr>
 															<th style="text-align: center">Data</th>
-															<th style="text-align: center">TÌtulo</th>
+															<th style="text-align: center">T√≠tulo</th>
 														</tr>
 													</thead>
 
@@ -707,7 +709,7 @@
 										<div id="panels" class="grid_3">
 											<div class="panel-header">
 												<div class="grabhandle">
-													<img alt="" src="static/images/caixaEntrada.png">
+													<img alt="" src="/static/images/caixaEntrada.png">
 												</div>
 												<span>Avisos Recebidos ( 4 mais recentes) </span>
 											</div>
@@ -743,7 +745,7 @@
 								<form id="formMensagensRecebidas" method="POST">
 
 									<div class="panel-header">
-										<span><img alt="" src="static/images/caixaEntrada.png">Mensagens
+										<span><img alt="" src="/static/images/caixaEntrada.png">Mensagens
 											Recebidas</span>
 									</div>
 
@@ -771,7 +773,7 @@
 												<ul>
 													<li>
 														<a href="#modalExcluir"  data-toggle="modal" title="Excluir" data-target="#modalExcluir" title="Excluir">
-														<img src="static/images/cross.png" width="15" height="17"> Excluir</a>
+														<img src="/static/images/cross.png" width="15" height="17"> Excluir</a>
 													</li>
 												</ul>
 											</div>
@@ -793,7 +795,7 @@
 												<div class="modal-body" style="padding:20px">
 													<section id="panels">
 														<div class="panel-header">
-															<span><img src="static/images/add.png" alt="">Excluir Mensagem(s)</span><br/>
+															<span><img src="/static/images/add.png" alt="">Excluir Mensagem(s)</span><br/>
 															<span>Deseja excluir a(s) mensagem(s) selecionada(s)?</span><br/>
 														</div>
 					                         		</section>
@@ -816,13 +818,13 @@
 										method="POST">
 										<div class="addmenu">
 											<button type="submit" class="btn btn-default">
-												<img border="0" title="Inserir curso na institui√ß√£o"
-													src="static/images/alterar.png"> Salvar
+												<img border="0" title="Inserir curso na institui√É¬ß√É¬£o"
+													src="/static/images/alterar.png"> Salvar
 											</button>
 										</div>
 										<div class="panel-header">
 											<span class=""><img alt=""
-												src="static/images/lista.png"> E-mails a serem
+												src="/static/images/lista.png"> E-mails a serem
 												Recebidos </span>
 										</div>
 
@@ -877,7 +879,7 @@
 
 
 													<tr>
-														<td><label class="textinput">ContrataÁ„o aguardando aprovaÁ„o</label>
+														<td><label class="textinput">Contrata√ß√£o aguardando aprova√ß√£o</label>
 															<input type="hidden"
 															name="usuariosMensagemFuncionalidadeSelecionadas[2].id"
 															value="105908" />
@@ -896,7 +898,7 @@
 
 
 													<tr>
-														<td><label class="textinput">ContrataÁ„o aguardando parecer</label>
+														<td><label class="textinput">Contrata√ß√£o aguardando parecer</label>
 															<input type="hidden"
 															name="usuariosMensagemFuncionalidadeSelecionadas[3].id"
 															value="105909" />
@@ -915,7 +917,7 @@
 
 
 													<tr>
-														<td><label class="textinput">ContrataÁ„o aprovada</label>
+														<td><label class="textinput">Contrata√ß√£o aprovada</label>
 															<input type="hidden"
 															name="usuariosMensagemFuncionalidadeSelecionadas[4].id"
 															value="105910" />
@@ -972,7 +974,7 @@
 
 
 													<tr>
-														<td><label class="textinput">Edital pendente de aprovaÁ„o</label>
+														<td><label class="textinput">Edital pendente de aprova√ß√£o</label>
 															<input type="hidden"
 															name="usuariosMensagemFuncionalidadeSelecionadas[7].id"
 															value="105915" />
@@ -991,7 +993,7 @@
 
 
 													<tr>
-														<td><label class="textinput">Edital pendente de aprovaÁ„o</label>
+														<td><label class="textinput">Edital pendente de aprova√ß√£o</label>
 															<input type="hidden"
 															name="usuariosMensagemFuncionalidadeSelecionadas[8].id"
 															value="105916" />
@@ -1086,7 +1088,7 @@
 
 
 													<tr>
-														<td><label class="textinput">Inclus„o de novo item em PLS</label>
+														<td><label class="textinput">Inclus√£o de novo item em PLS</label>
 															<input type="hidden"
 															name="usuariosMensagemFuncionalidadeSelecionadas[13].id"
 															value="105921" />
@@ -1124,7 +1126,7 @@
 
 
 													<tr>
-														<td><label class="textinput">Item de transferÍncia em conduÁ„o</label>
+														<td><label class="textinput">Item de transfer√™ncia em condu√ß√£o</label>
 															<input type="hidden"
 															name="usuariosMensagemFuncionalidadeSelecionadas[15].id"
 															value="105924" />
@@ -1162,7 +1164,7 @@
 
 
 													<tr>
-														<td><label class="textinput">LicitaÁ„o liberada</label>
+														<td><label class="textinput">Licita√ß√£o liberada</label>
 															<input type="hidden"
 															name="usuariosMensagemFuncionalidadeSelecionadas[17].id"
 															value="105927" />
@@ -1181,7 +1183,7 @@
 
 
 													<tr>
-														<td><label class="textinput">LicitaÁ„o pendente de AdjudicaÁ„o</label>
+														<td><label class="textinput">Licita√ß√£o pendente de Adjudica√ß√£o</label>
 															<input type="hidden"
 															name="usuariosMensagemFuncionalidadeSelecionadas[18].id"
 															value="105928" />
@@ -1200,7 +1202,7 @@
 
 
 													<tr>
-														<td><label class="textinput">LicitaÁ„o pendente de aprovaÁ„o</label>
+														<td><label class="textinput">Licita√ß√£o pendente de aprova√ß√£o</label>
 															<input type="hidden"
 															name="usuariosMensagemFuncionalidadeSelecionadas[19].id"
 															value="105929" />
@@ -1219,7 +1221,7 @@
 
 
 													<tr>
-														<td><label class="textinput">LicitaÁ„o pendente de HomologaÁ„o</label>
+														<td><label class="textinput">Licita√ß√£o pendente de Homologa√ß√£o</label>
 															<input type="hidden"
 															name="usuariosMensagemFuncionalidadeSelecionadas[20].id"
 															value="105930" />
@@ -1238,7 +1240,7 @@
 
 
 													<tr>
-														<td><label class="textinput">LicitaÁ„o rejeitada</label>
+														<td><label class="textinput">Licita√ß√£o rejeitada</label>
 															<input type="hidden"
 															name="usuariosMensagemFuncionalidadeSelecionadas[21].id"
 															value="105931" />
@@ -1276,7 +1278,7 @@
 
 
 													<tr>
-														<td><label class="textinput">NAD aguardando aprovaÁ„o</label>
+														<td><label class="textinput">NAD aguardando aprova√ß√£o</label>
 															<input type="hidden"
 															name="usuariosMensagemFuncionalidadeSelecionadas[23].id"
 															value="105933" />
@@ -1314,7 +1316,7 @@
 
 
 													<tr>
-														<td><label class="textinput">Parecer de edital disponÌvel</label>
+														<td><label class="textinput">Parecer de edital dispon√≠vel</label>
 															<input type="hidden"
 															name="usuariosMensagemFuncionalidadeSelecionadas[25].id"
 															value="105938" />
@@ -1409,7 +1411,7 @@
 
 
 													<tr>
-														<td><label class="textinput">Processo de Compra Direta liberado para contrataÁ„o</label>
+														<td><label class="textinput">Processo de Compra Direta liberado para contrata√ß√£o</label>
 															<input type="hidden"
 															name="usuariosMensagemFuncionalidadeSelecionadas[30].id"
 															value="105949" />
@@ -1428,7 +1430,7 @@
 
 
 													<tr>
-														<td><label class="textinput">Processo liberado para licitaÁ„o</label>
+														<td><label class="textinput">Processo liberado para licita√ß√£o</label>
 															<input type="hidden"
 															name="usuariosMensagemFuncionalidadeSelecionadas[31].id"
 															value="105952" />
@@ -1447,7 +1449,7 @@
 
 
 													<tr>
-														<td><label class="textinput">Processo LicitatÛrio liberado para ContrataÁ„o</label>
+														<td><label class="textinput">Processo Licitat√≥rio liberado para Contrata√ß√£o</label>
 															<input type="hidden"
 															name="usuariosMensagemFuncionalidadeSelecionadas[32].id"
 															value="105953" />
@@ -1466,7 +1468,7 @@
 
 
 													<tr>
-														<td><label class="textinput">Processo pendente de aprovaÁ„o</label>
+														<td><label class="textinput">Processo pendente de aprova√ß√£o</label>
 															<input type="hidden"
 															name="usuariosMensagemFuncionalidadeSelecionadas[33].id"
 															value="105954" />
@@ -1523,7 +1525,7 @@
 
 
 													<tr>
-														<td><label class="textinput">RAL em conduÁ„o</label>
+														<td><label class="textinput">RAL em condu√ß√£o</label>
 															<input type="hidden"
 															name="usuariosMensagemFuncionalidadeSelecionadas[36].id"
 															value="105958" />
@@ -1561,7 +1563,7 @@
 
 
 													<tr>
-														<td><label class="textinput">Remessa de Material em conduÁ„o</label>
+														<td><label class="textinput">Remessa de Material em condu√ß√£o</label>
 															<input type="hidden"
 															name="usuariosMensagemFuncionalidadeSelecionadas[38].id"
 															value="105960" />
@@ -1580,7 +1582,7 @@
 
 
 													<tr>
-														<td><label class="textinput">RequisiÁ„o aguardando aprovaÁ„o</label>
+														<td><label class="textinput">Requisi√ß√£o aguardando aprova√ß√£o</label>
 															<input type="hidden"
 															name="usuariosMensagemFuncionalidadeSelecionadas[39].id"
 															value="105961" />
@@ -1599,7 +1601,7 @@
 
 
 													<tr>
-														<td><label class="textinput">RequisiÁ„o de transferÍncia aprovada</label>
+														<td><label class="textinput">Requisi√ß√£o de transfer√™ncia aprovada</label>
 															<input type="hidden"
 															name="usuariosMensagemFuncionalidadeSelecionadas[40].id"
 															value="105962" />
@@ -1618,7 +1620,7 @@
 
 
 													<tr>
-														<td><label class="textinput">RequisiÁ„o de transferÍncia pendente de aprovaÁ„o</label>
+														<td><label class="textinput">Requisi√ß√£o de transfer√™ncia pendente de aprova√ß√£o</label>
 															<input type="hidden"
 															name="usuariosMensagemFuncionalidadeSelecionadas[41].id"
 															value="105964" />
@@ -1637,7 +1639,7 @@
 
 
 													<tr>
-														<td><label class="textinput">RequisiÁ„o de transferÍncia rejeitada</label>
+														<td><label class="textinput">Requisi√ß√£o de transfer√™ncia rejeitada</label>
 															<input type="hidden"
 															name="usuariosMensagemFuncionalidadeSelecionadas[42].id"
 															value="105966" />
@@ -1656,7 +1658,7 @@
 
 
 													<tr>
-														<td><label class="textinput">RequisiÁ„o liberada</label>
+														<td><label class="textinput">Requisi√ß√£o liberada</label>
 															<input type="hidden"
 															name="usuariosMensagemFuncionalidadeSelecionadas[43].id"
 															value="105968" />
@@ -1675,7 +1677,7 @@
 
 
 													<tr>
-														<td><label class="textinput">RequisiÁ„o rejeitada</label>
+														<td><label class="textinput">Requisi√ß√£o rejeitada</label>
 															<input type="hidden"
 															name="usuariosMensagemFuncionalidadeSelecionadas[44].id"
 															value="105969" />
@@ -1694,7 +1696,7 @@
 
 
 													<tr>
-														<td><label class="textinput">SIGA - AlteraÁ„o de REGISTRO</label>
+														<td><label class="textinput">SIGA - Altera√ß√£o de REGISTRO</label>
 															<input type="hidden"
 															name="usuariosMensagemFuncionalidadeSelecionadas[45].id"
 															value="105972" />
@@ -1732,7 +1734,7 @@
 
 
 													<tr>
-														<td><label class="textinput">SIGA - Cancelamento do Processo EletrÙnico de Dispensa</label>
+														<td><label class="textinput">SIGA - Cancelamento do Processo Eletr√¥nico de Dispensa</label>
 															<input type="hidden"
 															name="usuariosMensagemFuncionalidadeSelecionadas[47].id"
 															value="105978" />
@@ -1770,7 +1772,7 @@
 
 
 													<tr>
-														<td><label class="textinput">SIGA - ConfirmaÁ„o de CREDENCIAMENTO</label>
+														<td><label class="textinput">SIGA - Confirma√ß√£o de CREDENCIAMENTO</label>
 															<input type="hidden"
 															name="usuariosMensagemFuncionalidadeSelecionadas[49].id"
 															value="105980" />
@@ -1789,7 +1791,7 @@
 
 
 													<tr>
-														<td><label class="textinput">SIGA - ConfirmaÁ„o de CREDENCIAMENTO</label>
+														<td><label class="textinput">SIGA - Confirma√ß√£o de CREDENCIAMENTO</label>
 															<input type="hidden"
 															name="usuariosMensagemFuncionalidadeSelecionadas[50].id"
 															value="105981" />
@@ -1808,7 +1810,7 @@
 
 
 													<tr>
-														<td><label class="textinput">SIGA - ConfirmaÁ„o de REGISTRO</label>
+														<td><label class="textinput">SIGA - Confirma√ß√£o de REGISTRO</label>
 															<input type="hidden"
 															name="usuariosMensagemFuncionalidadeSelecionadas[51].id"
 															value="105982" />
@@ -1827,7 +1829,7 @@
 
 
 													<tr>
-														<td><label class="textinput">SIGA - DeclaraÁ„o de vencedor</label>
+														<td><label class="textinput">SIGA - Declara√ß√£o de vencedor</label>
 															<input type="hidden"
 															name="usuariosMensagemFuncionalidadeSelecionadas[52].id"
 															value="105983" />
@@ -1884,7 +1886,7 @@
 
 
 													<tr>
-														<td><label class="textinput">SIGA - LicitaÁ„o Homologada</label>
+														<td><label class="textinput">SIGA - Licita√ß√£o Homologada</label>
 															<input type="hidden"
 															name="usuariosMensagemFuncionalidadeSelecionadas[55].id"
 															value="105987" />
@@ -1903,7 +1905,7 @@
 
 
 													<tr>
-														<td><label class="textinput">SIGA - LicitaÁ„o suspensa</label>
+														<td><label class="textinput">SIGA - Licita√ß√£o suspensa</label>
 															<input type="hidden"
 															name="usuariosMensagemFuncionalidadeSelecionadas[56].id"
 															value="105988" />
@@ -1922,7 +1924,7 @@
 
 
 													<tr>
-														<td><label class="textinput">SIGA - LicitaÁ„o suspensa para retificaÁ„o de itens atualizaÁ„o do edital</label>
+														<td><label class="textinput">SIGA - Licita√ß√£o suspensa para retifica√ß√£o de itens atualiza√ß√£o do edital</label>
 															<input type="hidden"
 															name="usuariosMensagemFuncionalidadeSelecionadas[57].id"
 															value="105989" />
@@ -1941,7 +1943,7 @@
 
 
 													<tr>
-														<td><label class="textinput">SIGA - Nova LicitaÁ„o</label>
+														<td><label class="textinput">SIGA - Nova Licita√ß√£o</label>
 															<input type="hidden"
 															name="usuariosMensagemFuncionalidadeSelecionadas[58].id"
 															value="105990" />
@@ -1960,7 +1962,7 @@
 
 
 													<tr>
-														<td><label class="textinput">SIGA - Novo aviso/adendo de licitaÁ„o</label>
+														<td><label class="textinput">SIGA - Novo aviso/adendo de licita√ß√£o</label>
 															<input type="hidden"
 															name="usuariosMensagemFuncionalidadeSelecionadas[59].id"
 															value="105991" />
@@ -2017,7 +2019,7 @@
 
 
 													<tr>
-														<td><label class="textinput">SIGA - Processo EletrÙnico de Dispensa</label>
+														<td><label class="textinput">SIGA - Processo Eletr√¥nico de Dispensa</label>
 															<input type="hidden"
 															name="usuariosMensagemFuncionalidadeSelecionadas[62].id"
 															value="105996" />
@@ -2055,7 +2057,7 @@
 
 
 													<tr>
-														<td><label class="textinput">SIGA - Sess„o de Preg„o EletrÙnico retomada</label>
+														<td><label class="textinput">SIGA - Sess√£o de Preg√£o Eletr√¥nico retomada</label>
 															<input type="hidden"
 															name="usuariosMensagemFuncionalidadeSelecionadas[64].id"
 															value="105998" />
@@ -2074,7 +2076,7 @@
 
 
 													<tr>
-														<td><label class="textinput">SIGA - Sess„o de Preg„o EletrÙnico suspensa</label>
+														<td><label class="textinput">SIGA - Sess√£o de Preg√£o Eletr√¥nico suspensa</label>
 															<input type="hidden"
 															name="usuariosMensagemFuncionalidadeSelecionadas[65].id"
 															value="106000" />
@@ -2093,7 +2095,7 @@
 
 
 													<tr>
-														<td><label class="textinput">SIGA - SolicitaÁ„o de REGISTRO</label>
+														<td><label class="textinput">SIGA - Solicita√ß√£o de REGISTRO</label>
 															<input type="hidden"
 															name="usuariosMensagemFuncionalidadeSelecionadas[66].id"
 															value="106001" />
@@ -2131,7 +2133,7 @@
 
 
 													<tr>
-														<td><label class="textinput">SolicitaÁ„o de cadastro de item recusada</label>
+														<td><label class="textinput">Solicita√ß√£o de cadastro de item recusada</label>
 															<input type="hidden"
 															name="usuariosMensagemFuncionalidadeSelecionadas[68].id"
 															value="106008" />
@@ -2150,7 +2152,7 @@
 
 
 													<tr>
-														<td><label class="textinput">Solicitada inclus„o de item no PLS</label>
+														<td><label class="textinput">Solicitada inclus√£o de item no PLS</label>
 															<input type="hidden"
 															name="usuariosMensagemFuncionalidadeSelecionadas[69].id"
 															value="106009" />
@@ -2169,7 +2171,7 @@
 
 
 													<tr>
-														<td><label class="textinput">Termo de AlteraÁ„o de ContrataÁ„o aguardando aprovaÁ„o</label>
+														<td><label class="textinput">Termo de Altera√ß√£o de Contrata√ß√£o aguardando aprova√ß√£o</label>
 															<input type="hidden"
 															name="usuariosMensagemFuncionalidadeSelecionadas[70].id"
 															value="106010" />
@@ -2188,7 +2190,7 @@
 
 
 													<tr>
-														<td><label class="textinput">Termo de AlteraÁ„o de ContrataÁ„o aprovado</label>
+														<td><label class="textinput">Termo de Altera√ß√£o de Contrata√ß√£o aprovado</label>
 															<input type="hidden"
 															name="usuariosMensagemFuncionalidadeSelecionadas[71].id"
 															value="106011" />
@@ -2212,7 +2214,7 @@
 
 							</section>
 						</div>
-						<!-- div id="configuraÁ„o" -->
+						<!-- div id="configura√ß√£o" -->
 
 						<div id="alterarDados" class="tab-pane fade">
 							<section id="alterarDados">
@@ -2223,10 +2225,10 @@
 										<a href="#modalAlterarSenha" data-toggle="modal"
 											title="AlterarSenha" data-target="#modalAlterarSenha"> <img
 											border="0" title="Alterar Senha"
-											src="static/images/arrow_refresh.png" /> Alterar Senha
+											src="/static/images/arrow_refresh.png" /> Alterar Senha
 										</a> <a class="btn btn-default" id="salvarDadosUsuario" href="#">
 											<img border="0" title="Salvar"
-											src="static/images/alterar.png" />Salvar
+											src="/static/images/alterar.png" />Salvar
 										</a>
 									</div>
 									<div class="panel-group" id="accordion">
@@ -2236,7 +2238,7 @@
 												<h4 class="panel-title">
 													<a data-toggle="collapse" data-parent="#accordion"
 														href="#collapseOne"> Dados Cadastrais <img
-														src="static/images/seta.png" width="30" height="16">
+														src="/static/images/seta.png" width="30" height="16">
 													</a>
 												</h4>
 											</div>
@@ -2274,7 +2276,7 @@
 														</div>
 													</div>
 													<div class="form-group">
-														<label for="data" class="col-sm-3 control-label">MatrÌcula:</label>
+														<label for="data" class="col-sm-3 control-label">Matr√≠cula:</label>
 														<div class="col-sm-8">
 															<p class="form-control-static">
 
@@ -2381,7 +2383,7 @@
 	      <!-- FOOTER -->
 	      <footer>
 	        <p class="pull-right"><a href="#">Ir para o topo</a></p>
-	        <p>Copyright 2013 SIGA - Sistema Integrado de Gest„o de AquisiÁıes - Vers„o 2.0. Todos os direitos reservados.</p>
+	        <p>Copyright 2013 SIGA - Sistema Integrado de Gest√£o de Aquisi√ß√µes - Vers√£o 2.0. Todos os direitos reservados.</p>
 	        <p>Governo do Estado do Rio de Janeiro.</p>
 	      </footer>
 
@@ -2404,13 +2406,13 @@
 							     </div>
 						 	 </div>
 							 <div class="form-group">
-							     <label class="col-sm-3 control-label">ConfirmaÁ„o Nova Senha:</label>
+							     <label class="col-sm-3 control-label">Confirma√ß√£o Nova Senha:</label>
 							     <div class="col-sm-5">
 							         <input type="password" class="form-control" name="filtroUsuario.senhaConfirmar" />
 							     </div>
 							 </div>
 		                    <div class="modal-footer">
-		                        <button type="button" class="btn btn-default" data-dismiss="modal">N„o</button>
+		                        <button type="button" class="btn btn-default" data-dismiss="modal">N√£o</button>
 		                        <button type="reset" class="btn btn-default"  value="Reset!" >Limpar</button>
 		                        <button type="submit" class="btn btn-primary">Gravar</button>
 		                    </div>

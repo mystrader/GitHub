@@ -7,7 +7,7 @@
 	"sInfoThousands":  ".",
 	"sLengthMenu": "Mostrar _MENU_ registros por pagina",
 	"sLoadingRecords": "Carregando...",
-	"sProcessing":  "<img src='/static/images/ajax-loader.gif'>",
+	"sProcessing":  "<img src='static/images/ajax-loader.gif'>",
 	"sZeroRecords": "Nenhum registro encontrado",
 	"sSearch": "Pesquisar",
 	"oPaginate": {

@@ -11,28 +11,30 @@
 
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
     <head>
+        <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge; charset=UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="description" content="SIGA2">
         <meta name="author" content="SEPLAG">
 
         <title>SIGA2</title>
-        <link rel="shortcut icon" href="/static/images/favicon.png"/>
+        <link rel="shortcut icon" href="static/images/favicon.png"/>
 
         <!-- Bootstrap core CSS -->
-        <link rel="stylesheet" type="text/css" href="/static/css/bootstrap.css" />
-        <link rel="stylesheet" type="text/css" href="/static/css/sigaCustomBootstrap.css" />
-        <link rel="stylesheet" type="text/css" href="/static/css/dataTables.bootstrap.css" >
+        <link rel="stylesheet" type="text/css" href="static/css/bootstrap.css" />
+        <link rel="stylesheet" type="text/css" href="static/css/sigaCustomBootstrap.css" />
+        <link rel="stylesheet" type="text/css" href="static/css/dataTables.bootstrap.css" >
 
          <!-- Custom styles for this template -->
-         <link rel="stylesheet" type="text/css" href="/static/css/siga.css" />
-         <link rel="stylesheet" type="text/css" href="/static/css/siga.M0.css" />
-         <link rel="stylesheet" type="text/css" href="/static/css/docs.css" />
-         <link rel="stylesheet" type="text/css" href="/static/css/tabdrop.css" />
-         <link rel="stylesheet" type="text/css" href="/static/css/datepicker.css">
-         <link rel="stylesheet" type="text/css" href="/static/css/themes/default/style.min.css" />
+         <link rel="stylesheet" type="text/css" href="static/css/siga.css" />
+         <link rel="stylesheet" type="text/css" href="static/css/siga.M0.css" />
+         <link rel="stylesheet" type="text/css" href="static/css/docs.css" />
+         <link rel="stylesheet" type="text/css" href="static/css/tabdrop.css" />
+         <link rel="stylesheet" type="text/css" href="static/css/datepicker.css">
+         <link rel="stylesheet" type="text/css" href="static/css/themes/default/style.min.css" />
+         <link rel="stylesheet" type="text/css" href="static/css/siga_fix.css" />
 
          <style type="text/css">
         	.dropdown-submenu{position:relative;}
@@ -43,13 +45,13 @@
          </style>
 
         <!-- Just for debugging purposes. Don't actually copy this line! -->
-        <!--[if lt IE 9]><script type="text/javascript" src="/SIGATESTES/static/js/ie8-responsive-file-warning.js"></script><![endif]-->
+        <!--[if lt IE 9]><script type="text/javascript" src="/SIGATESTESstatic/js/ie8-responsive-file-warning.js"></script><![endif]-->
 
         <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
 
         <!--[if lt IE 9]>
-          <script src="/static/js/html5shiv.js"></script>
-          <script src="/static/js/respond.min.js"></script>
+          <script src="static/js/html5shiv.js"></script>
+          <script src="static/js/respond.min.js"></script>
         <![endif]-->
 
         <!-- sj:head jqueryui="true" jquerytheme="flick" locale="pt-BR" / -->
@@ -58,22 +60,22 @@
 		    Bootstrap core JavaScript
 		    ================================================== -->
 		    <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
-		    <script type="text/javascript" src="/static/js/bootstrap.min.js"></script>
-         	<script type="text/javascript" src="/static/js/holder.js"></script>
-            <script type="text/javascript" src="/static/js/jquery.dataTables.min.js"></script>
-        	<script type="text/javascript" src="/static/js/dataTables.bootstrap.js"></script>
+		    <script type="text/javascript" src="static/js/bootstrap.min.js"></script>
+         	<script type="text/javascript" src="static/js/holder.js"></script>
+            <script type="text/javascript" src="static/js/jquery.dataTables.min.js"></script>
+        	<script type="text/javascript" src="static/js/dataTables.bootstrap.js"></script>
 
         	 <!-- Scripts utilizados no sistema -->
-	        <script type="text/javascript" src="/static/js/siga.js"></script>
-	        <script type="text/javascript" src="/static/js/siga_m0.js"></script>
-            <script type="text/javascript" src="/static/js/bootstrap-datepicker.js"></script>
+	        <script type="text/javascript" src="static/js/siga.js"></script>
+	        <script type="text/javascript" src="static/js/siga_m0.js"></script>
+            <script type="text/javascript" src="static/js/bootstrap-datepicker.js"></script>
 
-            <script type="text/javascript" src="/static/js/jquery.mask.min.js"></script>
-	        <script type="text/javascript" src="/static/js/jstree.min.js"></script>
+            <script type="text/javascript" src="static/js/jquery.mask.min.js"></script>
+	        <script type="text/javascript" src="static/js/jstree.min.js"></script>
 
-			<script type="text/javascript" src="/static/js/jquery.validate.min.js"></script>
-			<script type="text/javascript" src="/static/js/jquery.bsAlerts.min.js"></script>
-			<script type="text/javascript" src="/static/js/messages_pt_BR.min.js"></script>
+			<script type="text/javascript" src="static/js/jquery.validate.min.js"></script>
+			<script type="text/javascript" src="static/js/jquery.bsAlerts.min.js"></script>
+			<script type="text/javascript" src="static/js/messages_pt_BR.min.js"></script>
 
 
 
@@ -107,8 +109,8 @@
     <body>
 
 	<div class="navbar-wrapper">
-        <div class="logosiga"> <a href="#"><img class="siga" src="/static/images/logo2.png" alt="SIGA"></a></div>
-        <div><img class="gov" src="/static/images/govRio.jpg"></div>
+        <div class="logosiga"> <a href="#"><img class="siga" src="static/images/logo2.png" alt="SIGA"></a></div>
+        <div><img class="gov" src="static/images/govRio.jpg"></div>
      	<div class="user-box">
 		<div class="user-box-inner">
                     <div class="user-info">
@@ -372,9 +374,9 @@
 		</ol>
 
         <div class="actions">
-	    <img src="/static/images/help.png"> Ajuda
-	    <img src="/static/images/phone.png"> Suporte
-	    <a href="/SIGATESTES/administracao/Usuario/sairSistema.action"><img class="siga" src="/static/images/out.png" alt="Sair do sistema" /> Sair</a>
+	    <img src="static/images/help.png"> Ajuda
+	    <img src="static/images/phone.png"> Suporte
+	    <a href="/SIGATESTES/administracao/Usuario/sairSistema.action"><img class="siga" src="static/images/out.png" alt="Sair do sistema" /> Sair</a>
         </div>
 
         <!-- Marketing messaging and featurettes
@@ -384,9 +386,9 @@
 
             <div>
 			<script type="text/javascript"
-				src="/SIGATESTES/static/js/DataTables/js/DataTables.min.js"></script>
+				src="/SIGATESTESstatic/js/DataTables/js/DataTables.min.js"></script>
 			<script type="text/javascript"
-				src="/SIGATESTES/static/js/DataTables/js/dataTables.bootstrap.js"></script>
+				src="/SIGATESTESstatic/js/DataTables/js/dataTables.bootstrap.js"></script>
 			<script type="text/javascript">
 				$(document).ready(function() {
 

@@ -12,28 +12,30 @@
 
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
     <head>
+        <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge; charset=UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="description" content="SIGA2">
         <meta name="author" content="SEPLAG">
 
         <title>SIGA2</title>
-        <link rel="shortcut icon" href="/static/images/favicon.png"/>
+        <link rel="shortcut icon" href="static/images/favicon.png"/>
 
         <!-- Bootstrap core CSS -->
-        <link rel="stylesheet" type="text/css" href="/static/css/bootstrap.css" />
-        <link rel="stylesheet" type="text/css" href="/static/css/sigaCustomBootstrap.css" />
-        <link rel="stylesheet" type="text/css" href="/static/css/dataTables.bootstrap.css" >
+        <link rel="stylesheet" type="text/css" href="static/css/bootstrap.css" />
+        <link rel="stylesheet" type="text/css" href="static/css/sigaCustomBootstrap.css" />
+        <link rel="stylesheet" type="text/css" href="static/css/dataTables.bootstrap.css" >
 
          <!-- Custom styles for this template -->
-         <link rel="stylesheet" type="text/css" href="/static/css/siga.css" />
-         <link rel="stylesheet" type="text/css" href="/static/css/siga.M0.css" />
-         <link rel="stylesheet" type="text/css" href="/static/css/docs.css" />
-         <link rel="stylesheet" type="text/css" href="/static/css/tabdrop.css" />
-         <link rel="stylesheet" type="text/css" href="/static/css/datepicker.css">
-         <link rel="stylesheet" type="text/css" href="/static/css/themes/default/style.min.css" />
+         <link rel="stylesheet" type="text/css" href="static/css/siga.css" />
+         <link rel="stylesheet" type="text/css" href="static/css/siga.M0.css" />
+         <link rel="stylesheet" type="text/css" href="static/css/docs.css" />
+         <link rel="stylesheet" type="text/css" href="static/css/tabdrop.css" />
+         <link rel="stylesheet" type="text/css" href="static/css/datepicker.css">
+         <link rel="stylesheet" type="text/css" href="static/css/themes/default/style.min.css" />
+         <link rel="stylesheet" type="text/css" href="static/css/siga_fix.css" />
 
          <style type="text/css">
         	.dropdown-submenu{position:relative;}
@@ -44,13 +46,13 @@
          </style>
 
         <!-- Just for debugging purposes. Don't actually copy this line! -->
-        <!--[if lt IE 9]><script type="text/javascript" src="/SIGATESTES/static/js/ie8-responsive-file-warning.js"></script><![endif]-->
+        <!--[if lt IE 9]><script type="text/javascript" src="/SIGATESTESstatic/js/ie8-responsive-file-warning.js"></script><![endif]-->
 
         <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
 
         <!--[if lt IE 9]>
-          <script src="/static/js/html5shiv.js"></script>
-          <script src="/static/js/respond.min.js"></script>
+          <script src="static/js/html5shiv.js"></script>
+          <script src="static/js/respond.min.js"></script>
         <![endif]-->
 
         <!-- sj:head jqueryui="true" jquerytheme="flick" locale="pt-BR" / -->
@@ -59,22 +61,22 @@
 		    Bootstrap core JavaScript
 		    ================================================== -->
 		    <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
-		    <script type="text/javascript" src="/static/js/bootstrap.min.js"></script>
-         	<script type="text/javascript" src="/static/js/holder.js"></script>
-            <script type="text/javascript" src="/static/js/jquery.dataTables.min.js"></script>
-        	<script type="text/javascript" src="/static/js/dataTables.bootstrap.js"></script>
+		    <script type="text/javascript" src="static/js/bootstrap.min.js"></script>
+         	<script type="text/javascript" src="static/js/holder.js"></script>
+            <script type="text/javascript" src="static/js/jquery.dataTables.min.js"></script>
+        	<script type="text/javascript" src="static/js/dataTables.bootstrap.js"></script>
 
         	 <!-- Scripts utilizados no sistema -->
-	        <script type="text/javascript" src="/static/js/siga.js"></script>
-	        <script type="text/javascript" src="/static/js/siga_m0.js"></script>
-            <script type="text/javascript" src="/static/js/bootstrap-datepicker.js"></script>
+	        <script type="text/javascript" src="static/js/siga.js"></script>
+	        <script type="text/javascript" src="static/js/siga_m0.js"></script>
+            <script type="text/javascript" src="static/js/bootstrap-datepicker.js"></script>
 
-            <script type="text/javascript" src="/static/js/jquery.mask.min.js"></script>
-	        <script type="text/javascript" src="/static/js/jstree.min.js"></script>
+            <script type="text/javascript" src="static/js/jquery.mask.min.js"></script>
+	        <script type="text/javascript" src="static/js/jstree.min.js"></script>
 
-			<script type="text/javascript" src="/static/js/jquery.validate.min.js"></script>
-			<script type="text/javascript" src="/static/js/jquery.bsAlerts.min.js"></script>
-			<script type="text/javascript" src="/static/js/messages_pt_BR.min.js"></script>
+			<script type="text/javascript" src="static/js/jquery.validate.min.js"></script>
+			<script type="text/javascript" src="static/js/jquery.bsAlerts.min.js"></script>
+			<script type="text/javascript" src="static/js/messages_pt_BR.min.js"></script>
 
 
 
@@ -108,8 +110,8 @@
     <body>
 
 	<div class="navbar-wrapper">
-        <div class="logosiga"> <a href="#"><img class="siga" src="/static/images/logo2.png" alt="SIGA"></a></div>
-        <div><img class="gov" src="/static/images/govRio.jpg"></div>
+        <div class="logosiga"> <a href="#"><img class="siga" src="static/images/logo2.png" alt="SIGA"></a></div>
+        <div><img class="gov" src="static/images/govRio.jpg"></div>
      	<div class="user-box">
 		<div class="user-box-inner">
                     <div class="user-info">
@@ -373,9 +375,9 @@
 		</ol>
 
         <div class="actions">
-	    <img src="/static/images/help.png"> Ajuda
-	    <img src="/static/images/phone.png"> Suporte
-	    <a href="/SIGATESTES/administracao/Usuario/sairSistema.action"><img class="siga" src="/static/images/out.png" alt="Sair do sistema" /> Sair</a>
+	    <img src="static/images/help.png"> Ajuda
+	    <img src="static/images/phone.png"> Suporte
+	    <a href="/SIGATESTES/administracao/Usuario/sairSistema.action"><img class="siga" src="static/images/out.png" alt="Sair do sistema" /> Sair</a>
         </div>
 
         <!-- Marketing messaging and featurettes
@@ -406,7 +408,7 @@
 		            "sInfoThousands": ".",
 		            "sLengthMenu": "Mostrar _MENU_ registros por página",
 		            "sLoadingRecords": "Carregando...",
-		            "sProcessing": "<img src='/static/images/ajax-loader.gif'>",
+		            "sProcessing": "<img src='static/images/ajax-loader.gif'>",
 		            "sZeroRecords": "Nenhum registro encontrado",
 		            "sSearch": "Pesquisar",
 		            "oPaginate": {
@@ -595,7 +597,7 @@
         <div class="col-lg-12">
 			<section id="panels">
 				<div class="panel-headerAbas">
-					<img src="/static/images/detalhe.png" /><span> Manter Forma de Fornecimento </span>
+					<img src="static/images/detalhe.png" /><span> Manter Forma de Fornecimento </span>
 				</div>
 				<div class="bs-example bs-example-tabs">
 
@@ -607,7 +609,7 @@
 					<br/><br/>
 					<div class="addmenu">
 		                <a id="lnkCriar" href="#modalCriar" data-toggle="modal" title="Criar Forma de Fornecimento" data-target="#modalCriar">
-		                    <img src="/static/images/addNovo.png" alt=""><span class=""> Criar</span>
+		                    <img src="static/images/addNovo.png" alt=""><span class=""> Criar</span>
 		                </a>
 					</div>
 					<section id="panels">
@@ -740,7 +742,7 @@
 											</tr>
 											<tr>
 												<th></th>
-												<th><span><img class="fleft" src="/static/images/busca2.png" /> <input type="text" class="filter-input js-filter"></span></th>
+												<th><span><img class="fleft" src="static/images/busca2.png" /> <input type="text" class="filter-input js-filter"></span></th>
 											</tr>
 										</thead>
 										<tbody class="table-hover">
@@ -771,8 +773,8 @@
 									<div class="toolbar-row">
 										<div class="toolbar top clearfix">
 											<ul>
-												<li><a id="lnkAlterar" href="#modalAlterar" data-toggle="modal" title="Criar Forma de Fornecimento" data-target="#modalAlterar"><img src="/static/images/edit.png" width="16" height="16"> Alterar</a></li>
-												<li><a id="modalExcluir" href="#modalExcluir" data-toggle="modal" title="Criar Forma de Fornecimento" data-target="#modalExcluir"><img src="/static/images/cross.png" width="16" height="16"> Excluir</a></li>
+												<li><a id="lnkAlterar" href="#modalAlterar" data-toggle="modal" title="Criar Forma de Fornecimento" data-target="#modalAlterar"><img src="static/images/edit.png" width="16" height="16"> Alterar</a></li>
+												<li><a id="modalExcluir" href="#modalExcluir" data-toggle="modal" title="Criar Forma de Fornecimento" data-target="#modalExcluir"><img src="static/images/cross.png" width="16" height="16"> Excluir</a></li>
 											</ul>
 										</div>
 									</div>
