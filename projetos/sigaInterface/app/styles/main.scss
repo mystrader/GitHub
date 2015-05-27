@@ -13,7 +13,7 @@ $primary-color: #333;
 
 header {
     background-color: $brand-color;
-    position: fixed;
+   /* position: fixed; tirei pois o header tem que rolar até ele se transformar depois.*/
     top: 0;
     width: 100%;
     z-index: 10;
