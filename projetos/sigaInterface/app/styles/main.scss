@@ -8,20 +8,15 @@ $icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/boots
 $brand-color: #003581;
 $primary-color: #333;
 
+
 //SITE HEADER
 
 header {
     background-color: $brand-color;
-    overflow: hidden;
     position: fixed;
     top: 0;
     width: 100%;
     z-index: 10;
-}
-
-.navbar {
-    border-radius: 0;
-    margin-bottom: 0;
 }
 
 .logo {
@@ -36,4 +31,34 @@ padding: 20px 0;
 .gov {
     @extend .logo;
     float: right;
+}
+
+.navbar {
+    border-radius: 0;
+    margin-bottom: 0;
+}
+
+.navbar-default {
+    background-color: #ebebeb;
+}
+
+.navbar-nav{
+
+    > li >a {
+          position: relative;
+          display: block;
+          padding: 8px 10px;
+          -moz-border-bottom-colors: none;
+            -moz-border-left-colors: none;
+            -moz-border-right-colors: none;
+            -moz-border-top-colors: none;
+            background-color: #f6f6f6;
+            border-color: #CFCFCF #D6D6D6 #C8C8C8;
+            border-image: none;
+            border-style: solid;
+            border-width: 1px;
+            border-radius: 5px;
+            box-shadow: 0 1px #FFFFFF inset, 0 0 0 1px rgba(255, 255, 255, 0.7) inset, 0 2px #DADADA, 0 3px #C4C4C4, 0 4px 3px rgba(0, 0, 0, 0.1);
+        }
+
 }
