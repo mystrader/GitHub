@@ -9,6 +9,17 @@ $brand-color: #003581;
 $primary-color: #333;
 
 
+
+//GLOBAL STYLES
+
+body {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  line-height: 1.428571429;
+  color: #333333;
+  background: url(../images/bodyBg.png);
+}
+
 //SITE HEADER
 
 header {
@@ -62,5 +73,72 @@ padding: 20px 0;
             border-radius: 5px;
             box-shadow: 0 1px #FFFFFF inset, 0 0 0 1px rgba(255, 255, 255, 0.7) inset, 0 2px #DADADA, 0 3px #C4C4C4, 0 4px 3px rgba(0, 0, 0, 0.1);
         }
+    
+}
 
+    .breadcrumb {
+        background: url(../images/paper.png) #ACC2CF;
+        font-size: 12px;
+        height: 32px;
+        list-style: none outside none;
+        margin-bottom: 30px;
+        padding: 0 0 0 30px;
+        position: fixed;
+        top: 140px;
+        width: 100%;
+        z-index: 2;
+    }
+    
+    > .breadcrumb li {
+            background: url(../images/back-breadcrumb.png) no-repeat scroll right -85px rgba(0, 0, 0, 0);
+            float: left;
+            height: 30px;
+            padding: 0 28px 0 10px;
+    }
+
+//MAIN CONTAINER
+
+    main.container { margin-top: 200px; }
+
+//PAINEL
+
+.panel {
+    background-color: #F2F3F4;
+    border: 1px solid #CFCFCF;
+    border-radius: 4px 4px 4px 4px;
+    box-shadow: 0 1px white inset, 0 0 0 1px rgba(255, 255, 255, 0.7) inset, 0 2px #DADADA, 0 3px #C4C4C4, 0 4px 3px rgba(0, 0, 0, 0.1);
+    color: #333;
+    font-family: arial;
+    font-size: 14px;
+    margin-bottom: 15px;
+    padding: 0px;
+    position: relative;
+    clear: both;
+    width: 100%;
+    border-radius: 0;
+}
+
+//PAINEL > HEADER
+
+.panel-header {
+    font-size: 14px;
+    padding: 6px 12px;
+    position: relative;
+    background-color: #ebebeb;
+    border-bottom: 2px solid #5276aa;
+    color: #003581;
+}
+
+.panel-header {
+    padding: 6px 12px;
+    position: relative;
+    background-color: #ebebeb;
+    border-bottom: 2px solid #5276aa;
+    color: #003581;
+}
+
+.panel-header h1 {
+    font-size: 15px;
+    padding: 8px 14px 0 0;
+    margin: 0;
 }
