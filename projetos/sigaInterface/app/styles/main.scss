@@ -87,13 +87,19 @@ padding: 20px 0;
         top: 140px;
         width: 100%;
         z-index: 2;
-    }
+        border-radius: 0;
+
+        li {
+        background:url(../images/back-breadcrumb-arrow.png) no-repeat scroll right center rgba(255, 255, 255, 1);
+        float: left;
+        height: 30px;
+        padding: 0 28px 0 10px;
+
+        }
+
+        li:last-child {
+          background:url(../images/back-breadcrumb-arrow-last.png) no-repeat scroll right center rgba(255, 255, 255, 1);}
     
-    > .breadcrumb li {
-            background: url(../images/back-breadcrumb.png) no-repeat scroll right -85px rgba(0, 0, 0, 0);
-            float: left;
-            height: 30px;
-            padding: 0 28px 0 10px;
     }
 
 //MAIN CONTAINER
@@ -115,7 +121,6 @@ padding: 20px 0;
     position: relative;
     clear: both;
     width: 100%;
-    border-radius: 0;
 }
 
 //PAINEL > HEADER
