@@ -24,8 +24,6 @@ body {
 
 header {
     background-color: $brand-color;
-    position: fixed;
-    top: 0;
     width: 100%;
     z-index: 10;
 }
@@ -53,6 +51,7 @@ padding: 20px 0;
 
 .navbar-default {
     background-color: #ebebeb;
+    padding: 2px 0 5px 0;
 }
 
 .navbar-nav{
@@ -79,14 +78,11 @@ padding: 20px 0;
     .breadcrumb {
         background: url(../images/paper.png) #ACC2CF;
         font-size: 12px;
-        height: 32px;
+        height: 34px;
         list-style: none outside none;
-        margin-bottom: 30px;
-        padding: 0 0 0 30px;
-        position: fixed;
-        top: 140px;
+        margin-bottom: 0;
+        padding: 2px 0 2px 30px;
         width: 100%;
-        z-index: 2;
         border-radius: 0;
 
         li {
@@ -99,12 +95,18 @@ padding: 20px 0;
 
         li:last-child {
           background:url(../images/back-breadcrumb-arrow-last.png) no-repeat scroll right center rgba(255, 255, 255, 1);}
-    
+        li a {
+          color: #757F8C;
+          display: block;
+          height: 40px;
+          line-height: 30px;
+          text-shadow: 0 1px #FEFEFF;
+        }
     }
 
 //MAIN CONTAINER
 
-    main.container { margin-top: 200px; }
+    main.container { margin-top: 40px; }
 
 //PAINEL
 
